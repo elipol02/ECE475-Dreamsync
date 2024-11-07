@@ -1,8 +1,14 @@
 #include <SoftwareSerial.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 // Pin definitions for Adafruit Feather nRF52840
-#define TEMP_SENSOR A2     // Use A2 (P0.28)
+#define LIGHT_SENSOR_1 A0  // Use A0 (P0.26)
+#define LIGHT_SENSOR_2 A1  // Use A1 (P0.27)
 #define HEART_RATE_PIN A3  // Use A3 (P0.29)
+
+// DS18B20 temperature sensor pin
+#define TEMP_SENSOR_PIN A2 // Use A2 (P0.28)
 
 // Bluetooth module pins (if using SoftSerial)
 #define BT_RX 2  // Use GPIO2 (P0.02)
@@ -11,15 +17,23 @@
 // Create bluetooth serial connection
 SoftwareSerial bluetooth(BT_RX, BT_TX);
 
+// Create OneWire instance
+OneWire oneWire(TEMP_SENSOR_PIN);
+
+// Create DallasTemperature instance
+DallasTemperature sensors(&oneWire);
+
 // Timing variables (all in milliseconds)
-const unsigned long TEMP_INTERVAL = 300000;  // 5 minutes
+const unsigned long LIGHT_TEMP_INTERVAL = 300000;  // 5 minutes
 const unsigned long HEART_RATE_INTERVAL = 120000;  // 2 minutes
 
-unsigned long lastTempReading = 0;
+unsigned long lastLightTempReading = 0;
 unsigned long lastHeartRateReading = 0;
 
 // Sensor state management
 enum SensorState {
+    LIGHT_1,
+    LIGHT_2,
     TEMPERATURE,
     HEART_RATE,
     IDLE
@@ -29,6 +43,8 @@ SensorState currentState = IDLE;
 
 // Buffer for sensor readings
 struct SensorData {
+    int light1;
+    int light2;
     float temperature;
     int heartRate;
 } sensorData;
@@ -46,19 +62,23 @@ void setup() {
     // Initialize serial communications
     Serial.begin(9600);
     bluetooth.begin(9600);
-    
+
     // Initialize analog pins
-    pinMode(TEMP_SENSOR, INPUT);
+    pinMode(LIGHT_SENSOR_1, INPUT);
+    pinMode(LIGHT_SENSOR_2, INPUT);
     pinMode(HEART_RATE_PIN, INPUT);
+
+    // Initialize the temperature sensor
+    sensors.begin();
 }
 
 void loop() {
     unsigned long currentTime = millis();
     
-    // Check if it's time to read temperature sensor
-    if (currentTime - lastTempReading >= TEMP_INTERVAL) {
-        readTemperature();
-        lastTempReading = currentTime;
+    // Check if it's time to read light and temperature sensors
+    if (currentTime - lastLightTempReading >= LIGHT_TEMP_INTERVAL) {
+        readLightAndTemp();
+        lastLightTempReading = currentTime;
     }
     
     // Check if it's time to read heart rate sensor
@@ -76,15 +96,27 @@ void loop() {
 
 void processCurrentState() {
     switch (currentState) {
+        case LIGHT_1:
+            sensorData.light1 = analogRead(LIGHT_SENSOR_1);
+            currentState = LIGHT_2;
+            break;
+            
+        case LIGHT_2:
+            sensorData.light2 = analogRead(LIGHT_SENSOR_2);
+            currentState = TEMPERATURE;
+            break;
+            
         case TEMPERATURE:
-            // Convert analog reading to temperature in Celsius
-            {
-                int tempReading = analogRead(TEMP_SENSOR);
-                float voltage = tempReading * (3.3 / 1024.0);
-                sensorData.temperature = (voltage - 0.5) * 100;
-            }
+            // Get temperature from DS18B20 sensor
+            sensors.requestTemperatures();  // Request temperature reading
+            sensorData.temperature = sensors.getTempCByIndex(0); // Get temperature in Celsius
+            
+            // Debugging output
+            Serial.print("Temperature (C): ");
+            Serial.println(sensorData.temperature);
+            
             currentState = IDLE;
-            sendTemperatureData();
+            sendEnvironmentalData();
             break;
             
         case HEART_RATE:
@@ -99,8 +131,8 @@ void processCurrentState() {
     }
 }
 
-void readTemperature() {
-    currentState = TEMPERATURE;  // Start the temperature reading sequence
+void readLightAndTemp() {
+    currentState = LIGHT_1;  // Start the environmental reading sequence
 }
 
 void readHeartRate() {
@@ -118,6 +150,10 @@ int readHeartRateSensor(int pin, int* ppgBuffer, int &bufferIndex, float &thresh
     }
     int filteredValue = sum / SAMPLES;
     
+    // Debugging output
+    Serial.print("Raw Heart Rate Reading: ");
+    Serial.println(filteredValue);
+    
     // Peak detection
     if (filteredValue > threshold) {
         if (millis() - lastPeakTime > 300) {  // Ignore peaks that are too close
@@ -132,7 +168,7 @@ int readHeartRateSensor(int pin, int* ppgBuffer, int &bufferIndex, float &thresh
     return bpm;
 }
 
-void sendTemperatureData() {
+void sendEnvironmentalData() {
     // Format: T,temperature
     String data = "T,";
     data += String(sensorData.temperature, 2);
@@ -149,3 +185,4 @@ void sendHeartRateData() {
     bluetooth.println(data);
     Serial.println(data);  // For debugging
 }
+
