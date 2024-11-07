@@ -169,25 +169,25 @@ void setup() {
 void loop() {
     unsigned long currentTime = millis();
 
-    // Check if it's time to read light and temperature sensors
+    // see if it's time to read light and temperature sensors
     if (currentTime - lastLightTempReading >= LIGHT_TEMP_INTERVAL) {
         currentState = LIGHT_TEMP;
         lastLightTempReading = currentTime;
     }
 
-    // Check if it's time to read heart rate sensor
+    // see if it's time to read heart rate sensor
     if (currentTime - lastHeartRateReading >= HEART_RATE_INTERVAL) {
         currentState = HEART_RATE;
         lastHeartRateReading = currentTime;
     }
 
-    // Check if it's time to read accelerometer
+    // see if it's time to read accelerometer
     if (currentTime - lastAccelReading >= ACCEL_INTERVAL) {
         currentState = ACCELEROMETER;
         lastAccelReading = currentTime;
     }
 
-    // Check if it's time to check the battery
+    // see if it's time to check the battery
     if (currentTime - lastBatteryReading >= BATTERY_INTERVAL) {
         currentState = BATTERY_CHECK;
         lastBatteryReading = currentTime;
@@ -201,14 +201,18 @@ void loop() {
 }
 
 void processCurrentState() {
+
+    int tempReading;
+    float voltage;
+
     switch (currentState) {
         case LIGHT_TEMP:
             sensorData.light1 = analogRead(LIGHT_SENSOR_1_PIN);
             sensorData.light2 = analogRead(LIGHT_SENSOR_2_PIN);
 
-            // Convert analog reading to temperature in Celsius
-            int tempReading = analogRead(TEMP_SENSOR_PIN);
-            float voltage = tempReading * (5.0 / 1024.0);
+            // convert analog reading to temperature in Celsius
+            tempReading = analogRead(TEMP_SENSOR_PIN);
+            voltage = tempReading * (5.0 / 1024.0);
             sensorData.temperature = (voltage - 0.5) * 100;
 
             sendEnvironmentalData();
