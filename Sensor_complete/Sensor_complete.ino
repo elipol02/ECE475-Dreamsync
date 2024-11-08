@@ -1,326 +1,166 @@
-#include <SoftwareSerial.h>
 #include <Wire.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
-// Pin definitions for Adafruit Feather nRF52840
-#define LIGHT_SENSOR_1_PIN A0  // Use A0 (P0.26)
-#define LIGHT_SENSOR_2_PIN A1  // Use A1 (P0.27)
-#define TEMP_SENSOR_PIN A2     // Use A2 (P0.28)
-#define HEART_RATE_PIN A3      // Use A3 (P0.29)
+#define LIGHT_SENSOR_1 A0
+#define LIGHT_SENSOR_2 A1
+#define TEMP_SENSOR_PIN A2    // DS18B20 connected to this pin
+#define HEART_RATE_PIN A3
+#define LED13 13              // Onboard LED for heartbeat indication
 
-// Bluetooth module pins (if using SoftSerial)
-#define BT_RX 2  // Use GPIO2 (P0.02)
-#define BT_TX 3  // Use GPIO3 (P0.03)
+// Bluetooth setup (using hardware UART for Adafruit Feather nRF52840)
+#define BLE_SERIAL Serial1
 
-// Battery monitoring stuff
-#define BATTERY_PIN A7      // feather's battery pin
-#define VBAT_DIVIDER 2      // the nRF52840's built-in voltage divider
-#define VBAT_MAX 4.25       // max voltage for 472228 battery
-#define VBAT_MIN 2.75       // min voltage for 472228 battery
+// DS18B20 OneWire bus
+OneWire oneWire(TEMP_SENSOR_PIN);
+DallasTemperature tempSensor(&oneWire);
 
-#define MC3419_ADDR 0x4C    // I2C address
-
-// MC3419 Registers
-#define REG_MODE 0x07       // Mode control
-#define REG_SR 0x08         // Sample rate
-#define REG_RANGE 0x20      // Range control
-#define REG_XOUT_LSB 0x0D   // Data registers
-#define REG_XOUT_MSB 0x0E
-#define REG_YOUT_LSB 0x0F
-#define REG_YOUT_MSB 0x10
-#define REG_ZOUT_LSB 0x11
-#define REG_ZOUT_MSB 0x12
-
-// MC3419 settings
-#define MODE_STANDBY 0x00
-#define MODE_WAKE 0x01
-#define SR_125HZ 0x03       // 125Hz output rate
-#define RANGE_2G 0x00       // ±2g range
-
-// Create Bluetooth serial connection
-SoftwareSerial bluetooth(BT_RX, BT_TX);
-
-// Timing variables (all in milliseconds)
-const unsigned long LIGHT_TEMP_INTERVAL = 300000;  // 5 minutes
-const unsigned long HEART_RATE_INTERVAL = 120000;  // 2 minutes
-const unsigned long ACCEL_INTERVAL = 100;          // 100ms (10Hz)
-const unsigned long BATTERY_INTERVAL = 1000;       // 1 second
-
+// Timing intervals (in milliseconds)
+const unsigned long LIGHT_TEMP_INTERVAL = 3000;  // 3 seconds
+const unsigned long HEART_RATE_INTERVAL = 1200;  // 1.2 seconds
 unsigned long lastLightTempReading = 0;
 unsigned long lastHeartRateReading = 0;
-unsigned long lastAccelReading = 0;
-unsigned long lastBatteryReading = 0;
 
-// Sensor state management
-enum SensorState {
-    LIGHT_TEMP,
-    HEART_RATE,
-    ACCELEROMETER,
-    BATTERY_CHECK,
-    IDLE
-};
+// Buffer for heart rate data
+const int SAMPLES = 100;
+int ppgBuffer[SAMPLES];
+int bufferIndex = 0;
+int peakCount = 0;
+unsigned long lastPeakTime = 0;
+unsigned long lastBPMCalculationTime = 0;
+unsigned long peakIntervals[10];  // Array to store intervals between peaks
+int peakIntervalIndex = 0;
 
-SensorState currentState = IDLE;
-
-// Buffer for sensor readings
 struct SensorData {
     int light1;
     int light2;
     float temperature;
     int heartRate;
-    int16_t accelRawX;
-    int16_t accelRawY;
-    int16_t accelRawZ;
-    float accelG_X;
-    float accelG_Y;
-    float accelG_Z;
-    float motionIntensity;
-    float batteryVoltage;
-    int batteryPercent;
-    bool isCharging;
+    int rawHeartRate;
 } sensorData;
 
-const int SAMPLES = 100;
-int ppgBuffer[SAMPLES];
-int bufferIndex = 0;
-
-// Heart rate detection variables
-float threshold = 0.5;  // Threshold for peak detection
-int peakCount = 0;
-unsigned long lastPeakTime = 0;
-float accelSensitivity = 16384.0f;  // LSB/g for ±2g range
-bool accelInitialized = false;
-
-// Write helper for the MC3419
-void writeAccelRegister(uint8_t reg, uint8_t value) {
-    Wire.beginTransmission(MC3419_ADDR);
-    Wire.write(reg);
-    Wire.write(value);
-    Wire.endTransmission();
-}
-
-// Read accelerometer
-void readAccelerometer() {
-    if (!accelInitialized) return;
-
-    Wire.beginTransmission(MC3419_ADDR);
-    Wire.write(REG_XOUT_LSB);
-    Wire.endTransmission(false);
-    Wire.requestFrom(MC3419_ADDR, 6);
-
-    if (Wire.available() >= 6) {
-        uint8_t xL = Wire.read();
-        uint8_t xH = Wire.read();
-        uint8_t yL = Wire.read();
-        uint8_t yH = Wire.read();
-        uint8_t zL = Wire.read();
-        uint8_t zH = Wire.read();
-
-        sensorData.accelRawX = (xH << 8) | xL;
-        sensorData.accelRawY = (yH << 8) | yL;
-        sensorData.accelRawZ = (zH << 8) | zL;
-
-        // Converting to g (16384 LSB/g for ±2g range)
-        sensorData.accelG_X = sensorData.accelRawX / 16384.0;
-        sensorData.accelG_Y = sensorData.accelRawY / 16384.0;
-        sensorData.accelG_Z = sensorData.accelRawZ / 16384.0;
-
-        sensorData.motionIntensity = sqrt(
-            sensorData.accelG_X * sensorData.accelG_X +
-            sensorData.accelG_Y * sensorData.accelG_Y +
-            sensorData.accelG_Z * sensorData.accelG_Z
-        );
-    }
-}
-
-bool initializeMC3419() {
-    Wire.begin();
-
-    // Initialization sequence
-    writeAccelRegister(REG_MODE, MODE_STANDBY);
-    delay(10);
-
-    writeAccelRegister(REG_RANGE, RANGE_2G);
-    writeAccelRegister(REG_SR, SR_125HZ);
-
-    writeAccelRegister(REG_MODE, MODE_WAKE);
-    delay(3);
-
-    return true;
-}
-
 void setup() {
-    // Initialize serial communications
-    Serial.begin(9600);
-    bluetooth.begin(9600);
+    // Initialize serial communication
+    Serial.begin(115200);
+    BLE_SERIAL.begin(9600);  // Initialize Bluetooth
 
-    // Initialize analog pins
-    pinMode(LIGHT_SENSOR_1_PIN, INPUT);
-    pinMode(LIGHT_SENSOR_2_PIN, INPUT);
-    pinMode(TEMP_SENSOR_PIN, INPUT);
+    // Initialize temperature sensor
+    tempSensor.begin();
+
+    // Set pin modes
+    pinMode(LIGHT_SENSOR_1, INPUT);
+    pinMode(LIGHT_SENSOR_2, INPUT);
     pinMode(HEART_RATE_PIN, INPUT);
+    pinMode(LED13, OUTPUT);  // Set the onboard LED pin as output
 
-    // Initializing the accelerometer
-    accelInitialized = initializeMC3419();
-    if (!accelInitialized) {
-        Serial.println("Could not initialize MC3419!");
-    }
+    Serial.println("Setup complete");
 }
 
 void loop() {
     unsigned long currentTime = millis();
 
-    // see if it's time to read light and temperature sensors
+    // Check if it's time to read light and temperature sensors
     if (currentTime - lastLightTempReading >= LIGHT_TEMP_INTERVAL) {
-        currentState = LIGHT_TEMP;
+        readLightAndTemp();
         lastLightTempReading = currentTime;
     }
 
-    // see if it's time to read heart rate sensor
+    // Check if it's time to read heart rate
     if (currentTime - lastHeartRateReading >= HEART_RATE_INTERVAL) {
-        currentState = HEART_RATE;
+        sensorData.heartRate = readHeartRateSensor();
+        sendHeartRateData();
         lastHeartRateReading = currentTime;
     }
 
-    // see if it's time to read accelerometer
-    if (currentTime - lastAccelReading >= ACCEL_INTERVAL) {
-        currentState = ACCELEROMETER;
-        lastAccelReading = currentTime;
-    }
-
-    // see if it's time to check the battery
-    if (currentTime - lastBatteryReading >= BATTERY_INTERVAL) {
-        currentState = BATTERY_CHECK;
-        lastBatteryReading = currentTime;
-    }
-
-    // Process the current state
-    processCurrentState();
-
-    // Small delay to prevent overwhelming the system
-    delay(10);
+    delay(10);  // Small delay to avoid overwhelming the system
 }
 
-void processCurrentState() {
+void readLightAndTemp() {
+    // Read light sensors
+    sensorData.light1 = analogRead(LIGHT_SENSOR_1);
+    sensorData.light2 = analogRead(LIGHT_SENSOR_2);
 
-    int tempReading;
-    float voltage;
+    // Read temperature from DS18B20
+    tempSensor.requestTemperatures();  // Request temperature data
+    sensorData.temperature = tempSensor.getTempCByIndex(0);  // Get temperature in Celsius
 
-    switch (currentState) {
-        case LIGHT_TEMP:
-            sensorData.light1 = analogRead(LIGHT_SENSOR_1_PIN);
-            sensorData.light2 = analogRead(LIGHT_SENSOR_2_PIN);
+    // Debugging output in desired format
+    Serial.print("Light 1: ");
+    Serial.print(sensorData.light1);
+    Serial.print(", Light 2: ");
+    Serial.print(sensorData.light2);
+    Serial.print(", Temperature: ");
+    Serial.println(sensorData.temperature, 2);  // Limit to 2 decimal places
 
-            // convert analog reading to temperature in Celsius
-            tempReading = analogRead(TEMP_SENSOR_PIN);
-            voltage = tempReading * (5.0 / 1024.0);
-            sensorData.temperature = (voltage - 0.5) * 100;
-
-            sendEnvironmentalData();
-            currentState = IDLE;
-            break;
-
-        case HEART_RATE:
-            sensorData.heartRate = readHeartRateSensor(HEART_RATE_PIN);
-            sendHeartRateData();
-            currentState = IDLE;
-            break;
-
-        case ACCELEROMETER:
-            readAccelerometer();
-            sendAccelData();
-            currentState = IDLE;
-            break;
-
-        case BATTERY_CHECK:
-            checkBattery();
-            sendBatteryData();
-            currentState = IDLE;
-            break;
-
-        case IDLE:
-            // Do nothing in idle state
-            break;
-    }
+    sendEnvironmentalData();
 }
 
-int readHeartRateSensor(int pin) {
-    // Read PPG signal and apply a moving average filter
-    ppgBuffer[bufferIndex] = analogRead(pin);
+int readHeartRateSensor() {
+    // Read pulse sensor data into buffer and calculate heart rate
+    int rawValue = analogRead(HEART_RATE_PIN);
+    ppgBuffer[bufferIndex] = rawValue;
     bufferIndex = (bufferIndex + 1) % SAMPLES;
 
+    // Calculate moving average
     int sum = 0;
     for (int i = 0; i < SAMPLES; i++) {
         sum += ppgBuffer[i];
     }
     int filteredValue = sum / SAMPLES;
 
-    // Peak detection
-    if (filteredValue > threshold) {
-        if (millis() - lastPeakTime > 300) {  // Ignore peaks that are too close
-            peakCount++;
-            lastPeakTime = millis();
-        }
+    // Store the raw value
+    sensorData.rawHeartRate = rawValue;
+
+    // Debugging output for raw and filtered values
+    Serial.print("Raw heart rate value: ");
+    Serial.println(rawValue);
+    Serial.print("Filtered heart rate value: ");
+    Serial.println(filteredValue);
+
+    // Peak detection logic
+    int threshold = 80;  // Adjust threshold as needed based on signal amplitude
+    int debounceTime = 300;  // Minimum time between peaks to avoid counting noise as peaks
+    unsigned long currentTime = millis();
+    if (filteredValue > threshold && (currentTime - lastPeakTime) > debounceTime) {
+        peakCount++;
+        unsigned long peakInterval = currentTime - lastPeakTime;
+        peakIntervals[peakIntervalIndex] = peakInterval;
+        peakIntervalIndex = (peakIntervalIndex + 1) % 10;  // Keep a rolling buffer of the last 10 intervals
+        lastPeakTime = currentTime;
+        digitalWrite(LED13, HIGH);  // Blink onboard LED when heartbeat is detected
+    } else {
+        digitalWrite(LED13, LOW);   // Turn off LED if no heartbeat detected
     }
 
-    // Calculate heart rate (BPM) from peak count
-    float bpm = (peakCount / (millis() / 60000.0));
+    // Calculate BPM from peak intervals
+    int intervalSum = 0;
+    for (int i = 0; i < 10; i++) {
+        intervalSum += peakIntervals[i];
+    }
+    int bpm = 0;
+    if (intervalSum > 0) {
+        float averageInterval = intervalSum / 10.0;
+        bpm = 60000 / averageInterval;
+    }
+
+    // Debugging output for BPM
+    Serial.print("Calculated BPM: ");
+    Serial.println(bpm);
 
     return bpm;
 }
 
 void sendEnvironmentalData() {
-    // Format: E,light1,light2,temperature
-    String data = "E,";
-    data += String(sensorData.light1) + ",";
-    data += String(sensorData.light2) + ",";
-    data += String(sensorData.temperature, 2);
-
-    bluetooth.println(data);
-    Serial.println(data);
+    // Format environmental data: E,light1,light2,temperature
+    String data = "E," + String(sensorData.light1) + "," + String(sensorData.light2) + "," + String(sensorData.temperature, 2);
+    BLE_SERIAL.println(data);
+    Serial.println(data);  // For debugging
 }
 
 void sendHeartRateData() {
-    // Format: H,heartRate
-    String data = "H,";
-    data += String(sensorData.heartRate);
-
-    bluetooth.println(data);
-    Serial.println(data);
+    // Format heart rate data: H,rawHeartRate,BPM
+    String data = "H," + String(sensorData.rawHeartRate) + "," + String(sensorData.heartRate);
+    BLE_SERIAL.println(data);
+    Serial.println(data);  // For debugging
 }
 
-void sendAccelData() {
-    // Format: A,accelX,accelY,accelZ,motionIntensity
-    String data = "A,";
-    data += String(sensorData.accelRawX) + ",";
-    data += String(sensorData.accelRawY) + ",";
-    data += String(sensorData.accelRawZ) + ",";
-    data += String(sensorData.motionIntensity, 2);
-
-    bluetooth.println(data);
-    Serial.println(data);
-}
-
-void sendBatteryData() {
-    // Format: B,batteryVoltage,batteryPercent,isCharging
-    String data = "B,";
-    data += String(sensorData.batteryVoltage, 2) + ",";
-    data += String(sensorData.batteryPercent) + ",";
-    data += sensorData.isCharging ? "1" : "0";
-
-    bluetooth.println(data);
-    Serial.println(data);
-}
-
-void checkBattery() {
-    // Read the battery voltage
-    float voltage = analogRead(BATTERY_PIN) * (3.3 / 1024.0) * VBAT_DIVIDER;
-    sensorData.batteryVoltage = voltage;
-
-    // Calculate the battery percentage
-    int percent = (int)((voltage - VBAT_MIN) / (VBAT_MAX - VBAT_MIN) * 100);
-    percent = constrain(percent, 0, 100);
-    sensorData.batteryPercent = percent;
-
-    // Check if the battery is charging
-    sensorData.isCharging = (voltage > VBAT_MAX);
-}
