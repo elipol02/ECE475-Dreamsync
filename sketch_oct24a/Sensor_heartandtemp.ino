@@ -132,7 +132,7 @@ void processCurrentState() {
 }
 
 void readLightAndTemp() {
-    currentState = LIGHT_1;  // Start the environmental reading sequence
+    currentState = TEMPERATURE;  // Start the environmental reading sequence
 }
 
 void readHeartRate() {
