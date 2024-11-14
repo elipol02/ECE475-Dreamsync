@@ -380,20 +380,36 @@ void sendMotionData() {
 // this should update the battery monitoring 
 // TODO: Still need to verify this implementation of the battery
 void checkBattery() {
-    // Read battery voltage using Feather's built-in monitoring
-    float measuredvbat = analogRead(A7);
-    measuredvbat *= 2;    // Voltage divider
-    measuredvbat *= 3.3;  // Reference voltage
-    measuredvbat /= 1024; // 10-bit ADC resolution
+    // Test and print battery status
+    float voltage = analogRead(A7);
+    voltage *= 2;    // Voltage divider
+    voltage *= 3.3;  // Reference voltage
+    voltage /= 1024; // Convert to voltage
+
+    // Print debugging info
+    Serial.print("Battery Voltage: ");
+    Serial.print(voltage);
+    Serial.println("V");
+
+    // Check if USB power is present (charging)
+    bool usbPresent = false;
+    #ifdef PIN_VUSB
+        usbPresent = (digitalRead(PIN_VUSB) == HIGH);
+    #endif
+    Serial.print("Charging: ");
+    Serial.println(usbPresent ? "Yes" : "No");
+
+    // Update sensor data structure
+    sensorData.batteryVoltage = voltage;
     
-    sensorData.batteryVoltage = measuredvbat;
-    
-    float batteryRange = 4.25 - 2.75;
-    float voltageOffset = measuredvbat - 2.75;
+    // Calculate percentage based on battery specs (472228 battery)
+    float batteryRange = 4.25 - 2.75;  // Max - Min voltage
+    float voltageOffset = voltage - 2.75;
     sensorData.batteryPercent = (voltageOffset / batteryRange) * 100.0;
     sensorData.batteryPercent = constrain(sensorData.batteryPercent, 0, 100);
     
-    sensorData.isCharging = (measuredvbat > 4.25);
+    // Update charging status
+    sensorData.isCharging = usbPresent;
     
     // Update BLE battery service
     blebas.write(sensorData.batteryPercent);
