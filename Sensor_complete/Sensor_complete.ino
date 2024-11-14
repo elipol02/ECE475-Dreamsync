@@ -1,6 +1,9 @@
 #include <Wire.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include <bluefruit.h>
+#include <Adafruit_LittleFS.h>
+#include <InternalFileSystem.h>
 
 #define LIGHT_SENSOR_1 A0
 #define LIGHT_SENSOR_2 A1
@@ -16,7 +19,13 @@
 #define MPU6050_ACCEL_XOUT_H 0x3B   // first data register 
 
 // bluetooth setup using hardware UART for nRF52840
-#define BLE_SERIAL Serial1
+//#define BLE_SERIAL Serial1
+
+// BLE services 
+BLEDfu  bledfu;  // OTA DFU service
+BLEDis  bledis;  // device information
+BLEUart bleuart; // uart over ble
+BLEBas  blebas;  // battery
 
 // DS18B20 OneWire bus
 OneWire oneWire(TEMP_SENSOR_PIN);
@@ -81,10 +90,67 @@ struct SensorData {
 
 bool mpuInitialized = false;
 
+// bluetooth helper
+void startAdv(void)
+{
+    // Advertising packet
+    Bluefruit.Advertising.addFlags(BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE);
+    Bluefruit.Advertising.addTxPower();
+    Bluefruit.Advertising.addService(bleuart);
+    Bluefruit.ScanResponse.addName();
+    
+    Bluefruit.Advertising.restartOnDisconnect(true);
+    Bluefruit.Advertising.setInterval(32, 244);    // in unit of 0.625 ms
+    Bluefruit.Advertising.setFastTimeout(30);      // number of seconds in fast mode
+    Bluefruit.Advertising.start(0);                // 0 = Don't stop advertising
+}
+
+// bluetooth helper
+void connect_callback(uint16_t conn_handle)
+{
+    BLEConnection* connection = Bluefruit.Connection(conn_handle);
+    char central_name[32] = { 0 };
+    connection->getPeerName(central_name, sizeof(central_name));
+    Serial.print("Connected to ");
+    Serial.println(central_name);
+}
+
+// bluetooth helper
+void disconnect_callback(uint16_t conn_handle, uint8_t reason)
+{
+    Serial.print("Disconnected, reason = 0x");
+    Serial.println(reason, HEX);
+}
+
 void setup() {
     // intialize serial communication
     Serial.begin(115200);
-    BLE_SERIAL.begin(9600);  // Initialize Bluetooth
+    while (!Serial) delay(10);
+
+    Serial.println("Sleep Mask BLE Setup");
+
+    // Initialize Bluefruit
+    Bluefruit.begin();
+    Bluefruit.setTxPower(4);    // Check bluefruit.h for supported values
+    Bluefruit.setName("SleepMask");
+    
+    // Callbacks for Peripheral
+    Bluefruit.Periph.setConnectCallback(connect_callback);
+    Bluefruit.Periph.setDisconnectCallback(disconnect_callback);
+
+    // Configure and Start Services
+    bledfu.begin();             // OTA DFU service
+    
+    bledis.setManufacturer("Your Name");
+    bledis.setModel("Sleep Mask v1.0");
+    bledis.begin();
+    
+    bleuart.begin();           // Configure and Start BLE Uart service
+    blebas.begin();            // Start BLE Battery service
+    
+    // Start advertising
+    startAdv();
+
 
     // initiailize I2C
     Wire.begin();
@@ -144,6 +210,18 @@ bool initializeMPU6050() {
 
 void loop() {
     unsigned long currentTime = millis();
+    static bool lastConnected = false;
+    bool currentConnected = Bluefruit.connected();
+    
+    // using this to test the connection status
+    if (currentConnected != lastConnected) {
+        if (currentConnected) {
+            Serial.println("BLE Connected!");
+        } else {
+            Serial.println("BLE Disconnected!");
+        }
+        lastConnected = currentConnected;
+    }
 
     // check light and temperature
     if (currentTime - lastLightTempReading >= LIGHT_TEMP_INTERVAL) {
@@ -264,38 +342,25 @@ int calculateBPM() {
     return bpm;
 }
 
-// TODO: Still need to verify this implementation of the battery
-void checkBattery() {
-    float measuredvbat = analogRead(A7);
-    measuredvbat *= 2;    // voltage divider
-    measuredvbat *= 3.3;  // referenc voltage
-    measuredvbat /= 1024; // 10-bit ADC resolution
-    
-    sensorData.batteryVoltage = measuredvbat;
-    
-    float batteryRange = 4.25 - 2.75;
-    float voltageOffset = measuredvbat - 2.75;
-    sensorData.batteryPercent = (voltageOffset / batteryRange) * 100.0;
-    sensorData.batteryPercent = constrain(sensorData.batteryPercent, 0, 100);
-    
-    sensorData.isCharging = (measuredvbat > 4.25);
-}
-
 void sendEnvironmentalData() {
     String data = "E," + String(sensorData.light1) + "," + 
                  String(sensorData.light2) + "," + 
                  String(sensorData.temperature, 2);
-    BLE_SERIAL.println(data);
+    bleuart.println(data);
     Serial.println(data);
 }
 
 void sendHeartRateData() {
     String data = "H," + String(sensorData.heartRate);
-    BLE_SERIAL.println(data);
+    bleuart.println(data);
     Serial.println(data);
 }
 
 void sendMotionData() {
+
+  // NOTE: if you are working on the code for something else other than motion then maybe just comment this out
+  //        the constant stream of accelerometer data gets nauseating.
+  
     String data = "M," + 
                  String(sensorData.mpu.accelX) + "," +
                  String(sensorData.mpu.accelY) + "," +
@@ -307,17 +372,40 @@ void sendMotionData() {
                  String(sensorData.mpu.roll, 2) + "," +
                  String(sensorData.mpu.motionIntensity, 2);
     
-    BLE_SERIAL.println(data);
+    bleuart.println(data);
     Serial.println(data);
+  
 }
 
+// this should update the battery monitoring 
 // TODO: Still need to verify this implementation of the battery
+void checkBattery() {
+    // Read battery voltage using Feather's built-in monitoring
+    float measuredvbat = analogRead(A7);
+    measuredvbat *= 2;    // Voltage divider
+    measuredvbat *= 3.3;  // Reference voltage
+    measuredvbat /= 1024; // 10-bit ADC resolution
+    
+    sensorData.batteryVoltage = measuredvbat;
+    
+    float batteryRange = 4.25 - 2.75;
+    float voltageOffset = measuredvbat - 2.75;
+    sensorData.batteryPercent = (voltageOffset / batteryRange) * 100.0;
+    sensorData.batteryPercent = constrain(sensorData.batteryPercent, 0, 100);
+    
+    sensorData.isCharging = (measuredvbat > 4.25);
+    
+    // Update BLE battery service
+    blebas.write(sensorData.batteryPercent);
+}
+
+// TODO: will need to test the battery
 void sendBatteryData() {
     String data = "B," + 
                  String(sensorData.batteryVoltage, 2) + "," +
                  String(sensorData.batteryPercent) + "," +
                  String(sensorData.isCharging ? 1 : 0);
     
-    BLE_SERIAL.println(data);
+    bleuart.println(data);
     Serial.println(data);
 }
