@@ -1,0 +1,2430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Eli\Documents\GitHub\ece475group7\pcb\pcb.kicad_sch</source>
+    <date>11/13/2024 10:59:40 PM</date>
+    <tool>Eeschema 7.0.10</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pcb.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.01μF</value>
+      <footprint>GRM155R71C103KA01D:CAPC1005X55N</footprint>
+      <libsource lib="GRM155R71C103KA01D" part="GRM155R71C103KA01D" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5198e2fd-3cec-4687-ba51-6e3a8dc02be1</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4fa9015-befe-4723-a6a6-8114150e064a</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1401f192-ea85-4d72-907a-304928f6f7ee</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e97d8c04-21d2-4d08-851d-46e8879ea0b7</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>22pF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7c1fd3a-df9d-45b5-bbc6-3f994a0ed73b</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>22pF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b81d04b1-527f-4318-96b8-a308eb44252d</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aaeded85-b854-4614-8ee9-acc62a32d6da</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72801248-7e16-4200-862a-a3c1f27b35f0</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90915e7b-2abc-455b-81b8-37c71c52d576</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b86e01a-2fb4-45be-88cc-72b6cb00c27f</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>674b9a05-4366-4f60-9963-95fdb21fec1f</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>10uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>334c5a12-71e3-4124-8b27-e601a58a95c7</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>10uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96a3a8cf-e059-4121-ac38-921a2be43c14</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10uF</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ff1c58c-5321-4c5e-a16e-d9dfa3a83789</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a530fa6d-ac08-4b2c-b7d8-1b2dd44d30d2</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ddc27d33-fb22-4f88-9bbe-dbdaee57e4f3</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5628602c-4fb9-48d5-8413-23d78eadea83</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28d575d2-abfd-441e-8545-5f3795ffd13a</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6e866a5d-c58f-478a-9cd6-099ae12c2fbd</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32efeefc-4bb6-44d9-89f6-8019ad7d4e12</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e86d93e5-7a3f-4f80-b86e-87ae0720f14e</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b77b5264-2338-4625-896e-0856125fe308</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d098daec-f298-4f48-8399-21902aecc618</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fcb245b-5b70-4b01-81c0-c07ea8876362</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>36a01db4-a24e-4328-ae9c-e0494dcc616f</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6e05180-2eac-451b-b8cd-ebd809dc57a9</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a356626f-0d1e-401e-b69e-1575c0068f30</tstamps>
+    </comp>
+    <comp ref="C28">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7df4b32-98da-45aa-a391-27625c04eb4e</tstamps>
+    </comp>
+    <comp ref="C29">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb26917a-6902-4c7b-91c7-4fa42437e569</tstamps>
+    </comp>
+    <comp ref="C30">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1114959d-580b-44b3-b39d-6faede079950</tstamps>
+    </comp>
+    <comp ref="C31">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1276cd2-f9cc-4e4b-985b-21f7f00e2515</tstamps>
+    </comp>
+    <comp ref="C37">
+      <value>10μF</value>
+      <footprint>CL21A106KOQNNNG:CAPC2012X140N</footprint>
+      <libsource lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f99ad78a-01a5-4c6d-b189-ade5284f312d</tstamps>
+    </comp>
+    <comp ref="C38">
+      <value>0.1μF</value>
+      <footprint>CL05B104KP5NNNC:CAPC1005X55N</footprint>
+      <libsource lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3af13bec-0086-4fe6-a324-3b0628267256</tstamps>
+    </comp>
+    <comp ref="C39">
+      <value>2.2nF</value>
+      <footprint>CGA3E2X7R1H222K080AA:CAPC1608X90N</footprint>
+      <libsource lib="CGA3E2X7R1H222K080AA" part="CGA3E2X7R1H222K080AA" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a17f8a35-9717-4823-b86b-17d1b12b82b1</tstamps>
+    </comp>
+    <comp ref="D+1">
+      <value>TPTP10R</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:TP10R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP10R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>419c78e5-22a0-484c-8b55-7df6182d332a</tstamps>
+    </comp>
+    <comp ref="D-1">
+      <value>TPTP10R</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:TP10R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP10R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65b23df1-3fe1-4da2-8b35-ae94041b532c</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>RED</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:CHIPLED_0805_NOOUTLINE</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="LED0805_NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>538eae9b-799e-4459-a6d8-98b6a7d1d06c</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>MBR120</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:SOD-123</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="DIODE-SCHOTTKYSOD-123" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41610822-313c-4279-8812-c4ab06b46a12</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>ORANGE</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:CHIPLED_0805_NOOUTLINE</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="LED0805_NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2607af02-c60e-486d-9df1-bcc81ebfb473</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>BLUE</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:CHIPLED_0805_NOOUTLINE</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="LED0805_NOOUTLINE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d1f6b04-876a-4e1f-84e0-4b281eefcf7d</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>GD25Q16</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:USON8</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="SPIFLASH_8PINUX" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bace046-b29d-40ba-a55f-771a856f6e3e</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>DNP</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:_0805MP</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="INDUCTOR_0805MP" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d847c53c-a18a-41c4-9e03-4b2a02e6aeb9</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>WS2812B3535</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:LED3535</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="WS2812B3535" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48d694a3-a3c3-483e-91af-7b8c2e63ab5c</tstamps>
+    </comp>
+    <comp ref="MDBT1">
+      <value>MDBT50</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:MDBT50</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MDBT50" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>895c1c77-be77-4919-88d7-8bf9cd9a11a7</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>~</value>
+      <libsource lib="Library" part="HW5P-1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b11aa08-2b26-452b-8634-4273d6c0a1fe</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>DMG2305</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MOSFET-P" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ccd56fb-9725-45e9-a54c-f5a46d02694f</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>~</value>
+      <libsource lib="Library" part="HW5P-1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>070a8926-be5f-4417-889d-78133f5f69e0</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>22</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>394f92d9-8b31-4a45-9bea-dd71953c9702</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>22</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89d8e20c-1880-4cc3-9399-9b45fe34fe28</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>20</value>
+      <footprint>CRCW251220R0FKEG:RESC6331X70N</footprint>
+      <libsource lib="CRCW251220R0FKEG" part="CRCW251220R0FKEG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4cdde519-764c-4ab7-a117-4a092749b430</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>4.7K</value>
+      <footprint>RC0402JR-074K7L:RESC1005X40N</footprint>
+      <fields>
+        <field name="AVAILABILITY">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda</field>
+        <field name="DESCRIPTION">4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film</field>
+        <field name="Description">
+                        
+                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-4.7KJRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402JR-074K7L</field>
+        <field name="PACKAGE">1005 Panasonic Electronic Components</field>
+        <field name="PRICE">None</field>
+        <field name="PURCHASE-URL">https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402JR-074K7L" part="RC0402JR-074K7L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-4.7KJRTR-ND"/>
+      <property name="MF" value="Yageo"/>
+      <property name="DESCRIPTION" value="4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"/>
+      <property name="PACKAGE" value="1005 Panasonic Electronic Components"/>
+      <property name="PRICE" value="None"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap"/>
+      <property name="MP" value="RC0402JR-074K7L"/>
+      <property name="Description" value="&#xA;                        &#xA;                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="AVAILABILITY" value="In Stock"/>
+      <property name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e28ec856-33c8-4bc7-8b7e-58579c68a06e</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>4.7K</value>
+      <footprint>RC0402JR-074K7L:RESC1005X40N</footprint>
+      <fields>
+        <field name="AVAILABILITY">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda</field>
+        <field name="DESCRIPTION">4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film</field>
+        <field name="Description">
+                        
+                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-4.7KJRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402JR-074K7L</field>
+        <field name="PACKAGE">1005 Panasonic Electronic Components</field>
+        <field name="PRICE">None</field>
+        <field name="PURCHASE-URL">https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402JR-074K7L" part="RC0402JR-074K7L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-4.7KJRTR-ND"/>
+      <property name="MF" value="Yageo"/>
+      <property name="DESCRIPTION" value="4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"/>
+      <property name="PACKAGE" value="1005 Panasonic Electronic Components"/>
+      <property name="PRICE" value="None"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap"/>
+      <property name="MP" value="RC0402JR-074K7L"/>
+      <property name="Description" value="&#xA;                        &#xA;                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="AVAILABILITY" value="In Stock"/>
+      <property name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a173681-eeed-4046-b72d-0cdab49a4d31</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1K</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c5baea6-d9ba-432c-a545-7536e3b1e1a9</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100K</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:RESPACK_4X0603</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_4PACK" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce9929c4-f49e-4b9b-a44e-e2ddb0bdf4d2 3add2763-d429-4842-a73e-193cc93bb050 394ba02d-c757-4d33-a42c-eee5fdf92113 3738549c-444b-413b-b6df-daeb26557759</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>4.7K</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af7d91eb-8c42-4ab6-ad48-3dc6473c60c0</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1K</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c87d7b2-eddf-4f06-a287-ab9d48050b47</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1K</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6b2a9d2-c699-46ca-ae11-f76f48e3746d</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>39K</value>
+      <footprint>RC0402FR-0739KL:RESC1005X40N</footprint>
+      <libsource lib="RC0402FR-0739KL" part="RC0402FR-0739KL" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8ca70dc-f466-4aa9-8b63-eff2f0db3ba6</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>45K</value>
+      <footprint>RC0402FR-0745K3L:RESC1005X40N</footprint>
+      <fields>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda</field>
+        <field name="Description">
+                        
+                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-45.3KLRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402FR-0745K3L</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402FR-0745K3L" part="RC0402FR-0745K3L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-45.3KLRTR-ND"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap"/>
+      <property name="Description" value="&#xA;                        &#xA;                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="MF" value="Yageo"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda"/>
+      <property name="MP" value="RC0402FR-0745K3L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1ea3f81-b450-4da8-9e8a-1d72ac2547d3</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>20</value>
+      <footprint>CRCW251220R0FKEG:RESC6331X70N</footprint>
+      <libsource lib="CRCW251220R0FKEG" part="CRCW251220R0FKEG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70850f78-9ef6-4659-83bb-0a375b04470d</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>39K</value>
+      <footprint>RC0402FR-0739KL:RESC1005X40N</footprint>
+      <libsource lib="RC0402FR-0739KL" part="RC0402FR-0739KL" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c422bcca-17de-49f7-9994-fd807bb83d08</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>45K</value>
+      <footprint>RC0402FR-0745K3L:RESC1005X40N</footprint>
+      <fields>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda</field>
+        <field name="Description">
+                        
+                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-45.3KLRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402FR-0745K3L</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402FR-0745K3L" part="RC0402FR-0745K3L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-45.3KLRTR-ND"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap"/>
+      <property name="Description" value="&#xA;                        &#xA;                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="MF" value="Yageo"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda"/>
+      <property name="MP" value="RC0402FR-0745K3L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c47549ac-47cd-499f-9c02-b5ede88ef00e</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>20</value>
+      <footprint>CRCW251220R0FKEG:RESC6331X70N</footprint>
+      <libsource lib="CRCW251220R0FKEG" part="CRCW251220R0FKEG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e5ecfac-a06c-4bfa-b7f3-15046684b76b</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>39K</value>
+      <footprint>RC0402FR-0739KL:RESC1005X40N</footprint>
+      <libsource lib="RC0402FR-0739KL" part="RC0402FR-0739KL" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1254c53d-196f-4311-a409-a396ce7d5113</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>45K</value>
+      <footprint>RC0402FR-0745K3L:RESC1005X40N</footprint>
+      <fields>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda</field>
+        <field name="Description">
+                        
+                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-45.3KLRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402FR-0745K3L</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402FR-0745K3L" part="RC0402FR-0745K3L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-45.3KLRTR-ND"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap"/>
+      <property name="Description" value="&#xA;                        &#xA;                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="MF" value="Yageo"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda"/>
+      <property name="MP" value="RC0402FR-0745K3L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f09ecf3-e327-4a5b-805f-c22511c416f4</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>20</value>
+      <footprint>CRCW251220R0FKEG:RESC6331X70N</footprint>
+      <libsource lib="CRCW251220R0FKEG" part="CRCW251220R0FKEG" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2b75a02-c55d-4429-957a-034fb734c3ca</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>39K</value>
+      <footprint>RC0402FR-0739KL:RESC1005X40N</footprint>
+      <libsource lib="RC0402FR-0739KL" part="RC0402FR-0739KL" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dfbd0a9b-efed-4549-8fbf-708618cc159b</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>45K</value>
+      <footprint>RC0402FR-0745K3L:RESC1005X40N</footprint>
+      <fields>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda</field>
+        <field name="Description">
+                        
+                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-45.3KLRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402FR-0745K3L</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402FR-0745K3L" part="RC0402FR-0745K3L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-45.3KLRTR-ND"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap"/>
+      <property name="Description" value="&#xA;                        &#xA;                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="MF" value="Yageo"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda"/>
+      <property name="MP" value="RC0402FR-0745K3L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c147fc2c-3d0d-4eb4-81c6-a36f8ddb2dcb</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>4.7K</value>
+      <footprint>RC0402JR-074K7L:RESC1005X40N</footprint>
+      <fields>
+        <field name="AVAILABILITY">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda</field>
+        <field name="DESCRIPTION">4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film</field>
+        <field name="Description">
+                        
+                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="DigiKey_Part_Number">311-4.7KJRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="MP">RC0402JR-074K7L</field>
+        <field name="PACKAGE">1005 Panasonic Electronic Components</field>
+        <field name="PRICE">None</field>
+        <field name="PURCHASE-URL">https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="RC0402JR-074K7L" part="RC0402JR-074K7L" description=""/>
+      <property name="DigiKey_Part_Number" value="311-4.7KJRTR-ND"/>
+      <property name="MF" value="Yageo"/>
+      <property name="DESCRIPTION" value="4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"/>
+      <property name="PACKAGE" value="1005 Panasonic Electronic Components"/>
+      <property name="PRICE" value="None"/>
+      <property name="Package" value="1005 Panasonic Electronic Components"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap"/>
+      <property name="MP" value="RC0402JR-074K7L"/>
+      <property name="Description" value="&#xA;                        &#xA;                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film&#xA;                        &#xA;"/>
+      <property name="AVAILABILITY" value="In Stock"/>
+      <property name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdac745e-ea2b-4d12-8e81-782470754a38</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>30K</value>
+      <footprint>ERA2AEB303X:RES_ERA2AEB303X</footprint>
+      <fields>
+        <field name="MANUFACTURER">Panasonic</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">0.35 mm</field>
+        <field name="PARTREV">3/1/2020</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <libsource lib="ERA2AEB303X" part="ERA2AEB303X" description=""/>
+      <property name="PARTREV" value="3/1/2020"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="0.35 mm"/>
+      <property name="MANUFACTURER" value="Panasonic"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30bd03fa-2e5e-4307-a021-74c62f50ec32</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>100K</value>
+      <footprint>RC0402FR-07100KL:RESC1005X40</footprint>
+      <fields>
+        <field name="MANUFACTURER">YAGEO</field>
+      </fields>
+      <libsource lib="RC0402FR-07100KL" part="RC0402FR-07100KL" description=""/>
+      <property name="MANUFACTURER" value="YAGEO"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49e42247-ca14-409f-ac96-2fa62d215add</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>KMR2</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:BTN_KMR2_4.6X2.8</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="SWITCH_TACT_SMT4.6X2.8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c368fae-faba-434d-9a7b-401ea6f1cfa0</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>KMR2</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:BTN_KMR2_4.6X2.8</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="SWITCH_TACT_SMT4.6X2.8" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>183b480d-b675-45fc-aeea-828bcaaf2f74</tstamps>
+    </comp>
+    <comp ref="SWC1">
+      <value>TPTP12R</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:TP12R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP12R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1fcd5a67-2dc0-4f32-8c57-77b1fd6b26f9</tstamps>
+    </comp>
+    <comp ref="SWD1">
+      <value>TPTP12R</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:TP12R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP12R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d159599-62a5-4d3e-834a-30997acd9821</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TPTP10R</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:TP10R</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP10R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f453a00-ae77-49db-ab59-504800b34513</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MPU-6050</value>
+      <footprint>Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm</footprint>
+      <datasheet>https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</datasheet>
+      <libsource lib="Sensor_Motion" part="MPU-6050" description="InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C"/>
+      <property name="ki_keywords" value="mems"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e657988-2e48-42b7-9cc2-99c4819cdf57</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>DS18B20</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf</datasheet>
+      <libsource lib="Sensor_Temperature" part="DS18B20" description="Programmable Resolution 1-Wire Digital Thermometer TO-92"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="Programmable Resolution 1-Wire Digital Thermometer TO-92"/>
+      <property name="ki_keywords" value="OneWire 1Wire Dallas Maxim"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ec97eda-a59e-463d-b0c4-d7eee97a3369</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>~</value>
+      <libsource lib="Library" part="SEN-11574" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f24a0d1-1d91-4144-9aef-5c439fdc1446</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>INA333xxDGK</value>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina333.pdf</datasheet>
+      <libsource lib="Amplifier_Instrumentation" part="INA333xxDGK" description="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="ki_keywords" value="instrumentation opamp amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>daaa0903-ad34-42e0-80d5-41836367b1fb</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>MCP6002-I/SN</value>
+      <datasheet>MCP6002-I/SN</datasheet>
+      <libsource lib="2024-11-12_18-15-18" part="MCP6002-I_SN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_keywords" value="MCP6002-I/SN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cfbf124-1546-4944-9142-71c4181a759d</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>CS5523-ASZ</value>
+      <datasheet>CS5523-ASZ</datasheet>
+      <libsource lib="2024-11-11_22-44-29" part="CS5523-ASZ" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_keywords" value="CS5523-ASZ"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7647b4b-15a5-47e1-82f9-14cfbaf11bcf</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>AP2112(3.3V)</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-5</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="VREG_SOT23-5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca98994d-7ea4-4d58-9e49-31f90efe0113</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>MCP73831T-2ACI/OT</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-5</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MCP73831/2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>655dccd1-bcab-4e69-9b0e-e6efce07cf3c</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>MCP6002-I/SN</value>
+      <datasheet>MCP6002-I/SN</datasheet>
+      <libsource lib="2024-11-12_18-15-18" part="MCP6002-I_SN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_keywords" value="MCP6002-I/SN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0930f70e-e387-44c4-a475-f0199f3ca4bf</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>INA333xxDGK</value>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina333.pdf</datasheet>
+      <libsource lib="Amplifier_Instrumentation" part="INA333xxDGK" description="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="ki_keywords" value="instrumentation opamp amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52de908c-1b7d-4657-b49a-6ebf1f6a50c0</tstamps>
+    </comp>
+    <comp ref="U11">
+      <value>MCP6002-I/SN</value>
+      <datasheet>MCP6002-I/SN</datasheet>
+      <libsource lib="2024-11-12_18-15-18" part="MCP6002-I_SN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_keywords" value="MCP6002-I/SN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6ad1f31-5d7a-4514-a174-469c409d9dd4</tstamps>
+    </comp>
+    <comp ref="U12">
+      <value>INA333xxDGK</value>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina333.pdf</datasheet>
+      <libsource lib="Amplifier_Instrumentation" part="INA333xxDGK" description="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="ki_keywords" value="instrumentation opamp amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f56f5eb1-a0f1-4da7-b861-65950a6a74ba</tstamps>
+    </comp>
+    <comp ref="U13">
+      <value>MCP6002-I/SN</value>
+      <datasheet>MCP6002-I/SN</datasheet>
+      <libsource lib="2024-11-12_18-15-18" part="MCP6002-I_SN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_keywords" value="MCP6002-I/SN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72d6f52f-f279-4388-a34d-aa1d0cd72464</tstamps>
+    </comp>
+    <comp ref="U14">
+      <value>INA333xxDGK</value>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina333.pdf</datasheet>
+      <libsource lib="Amplifier_Instrumentation" part="INA333xxDGK" description="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"/>
+      <property name="ki_keywords" value="instrumentation opamp amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e006c4db-51c9-4102-9814-9236f15834f1</tstamps>
+    </comp>
+    <comp ref="U20">
+      <value>MCP6001-OT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="MCP6001-OT" description="1MHz, Low-Power Op Amp, SOT-23-5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <property name="ki_description" value="1MHz, Low-Power Op Amp, SOT-23-5"/>
+      <property name="ki_keywords" value="single opamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78f1d8a1-f94c-4bed-8b97-2cd8af73dc02</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>2x5 0.05"</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:2X05_1.27MM_BOX_POSTS</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="JTAG-CORTEXBOXPOSTS" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89777c3f-e734-4c90-99ef-0bd0abd3a1a9</tstamps>
+    </comp>
+    <comp ref="X2">
+      <value>4u20329</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:4UCONN_20329_V2</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="USB_MICRO_20329_V2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>718d343a-b27a-4c00-8579-2c4bee426b52</tstamps>
+    </comp>
+    <comp ref="X3">
+      <value>JSTPH</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:JSTPH2</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CON_JST_PH_2PIN" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c04fc22e-2077-4286-a2c9-d73fd667c76b</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>32.768</value>
+      <footprint>Adafruit nRF52840 Bluefruit Feather Express Rev D:XTAL3215</footprint>
+      <libsource lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="XTAL-3.2X1.5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c53a8f52-14d1-47da-a306-a258353e1873</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="2024-11-11_22-44-29" part="CS5523-ASZ">
+      <docs>CS5523-ASZ</docs>
+      <footprints>
+        <fp>CIR-SSOP-24</fp>
+        <fp>CIR-SSOP-24-M</fp>
+        <fp>CIR-SSOP-24-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CS5523-ASZ</field>
+        <field name="Footprint">CIR-SSOP-24</field>
+        <field name="Datasheet">CS5523-ASZ</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AGND" type="power_in"/>
+        <pin num="2" name="VA+" type="power_in"/>
+        <pin num="3" name="AIN1+" type="input"/>
+        <pin num="4" name="AIN1-" type="input"/>
+        <pin num="5" name="AIN3+" type="input"/>
+        <pin num="6" name="AIN3-" type="input"/>
+        <pin num="7" name="NBV" type="unspecified"/>
+        <pin num="8" name="A0" type="output"/>
+        <pin num="9" name="CPD" type="unspecified"/>
+        <pin num="10" name="SDI" type="input"/>
+        <pin num="11" name="*CS" type="unspecified"/>
+        <pin num="12" name="XIN" type="input"/>
+        <pin num="13" name="XOUT" type="output"/>
+        <pin num="14" name="SDO" type="output"/>
+        <pin num="15" name="DGND" type="power_in"/>
+        <pin num="16" name="VD+" type="power_in"/>
+        <pin num="17" name="SCLK" type="input"/>
+        <pin num="18" name="A1" type="output"/>
+        <pin num="19" name="AIN4-" type="input"/>
+        <pin num="20" name="AIN4+" type="input"/>
+        <pin num="21" name="AIN2-" type="input"/>
+        <pin num="22" name="AIN2+" type="input"/>
+        <pin num="23" name="VREF-" type="input"/>
+        <pin num="24" name="VREF+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="2024-11-12_18-15-18" part="MCP6002-I_SN">
+      <docs>MCP6002-I/SN</docs>
+      <footprints>
+        <fp>SOIC8-N_MC_MCH</fp>
+        <fp>SOIC8-N_MC_MCH-M</fp>
+        <fp>SOIC8-N_MC_MCH-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP6002-I/SN</field>
+        <field name="Footprint">SOIC8-N_MC_MCH</field>
+        <field name="Datasheet">MCP6002-I/SN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUTA" type="output"/>
+        <pin num="2" name="VINA-" type="input"/>
+        <pin num="3" name="VINA+" type="input"/>
+        <pin num="4" name="VSS" type="unspecified"/>
+        <pin num="5" name="VINB+" type="input"/>
+        <pin num="6" name="VINB-" type="input"/>
+        <pin num="7" name="VOUTB" type="output"/>
+        <pin num="8" name="VDD" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0603_NO">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CAP_CERAMIC0805-NOOUTLINE">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:0805-NO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="CON_JST_PH_2PIN">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:JSTPH2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="DIODE-SCHOTTKYSOD-123">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:SOD-123</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="INDUCTOR_0805MP">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:_0805MP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="JTAG-CORTEXBOXPOSTS">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:2X05_1.27MM_BOX_POSTS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="SWDIO" type="bidirectional"/>
+        <pin num="3" name="GND@1" type="power_in"/>
+        <pin num="4" name="SWDCLK" type="bidirectional"/>
+        <pin num="5" name="GND@2" type="power_in"/>
+        <pin num="6" name="SWO" type="bidirectional"/>
+        <pin num="7" name="KEY" type="bidirectional"/>
+        <pin num="8" name="TDI" type="bidirectional"/>
+        <pin num="9" name="GNDDETECT" type="bidirectional"/>
+        <pin num="10" name="NRESET" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="LED0805_NOOUTLINE">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:CHIPLED_0805_NOOUTLINE</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MCP73831/2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MDBT50">
+      <fields>
+        <field name="Reference">MDBT50</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:MDBT50</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND@1" type="bidirectional"/>
+        <pin num="2" name="GND@2" type="bidirectional"/>
+        <pin num="3" name="P1.10" type="bidirectional"/>
+        <pin num="4" name="P1.11" type="bidirectional"/>
+        <pin num="5" name="P1.12" type="bidirectional"/>
+        <pin num="6" name="P1.13" type="bidirectional"/>
+        <pin num="7" name="P1.14" type="bidirectional"/>
+        <pin num="8" name="P1.15" type="bidirectional"/>
+        <pin num="9" name="P0.03/AIN1" type="bidirectional"/>
+        <pin num="10" name="P0.29/AIN5" type="bidirectional"/>
+        <pin num="11" name="P0.02/AIN0" type="bidirectional"/>
+        <pin num="12" name="P0.31/AIN7" type="bidirectional"/>
+        <pin num="13" name="P0.28/AIN4" type="bidirectional"/>
+        <pin num="14" name="P0.30/AIN6" type="bidirectional"/>
+        <pin num="15" name="GND@15" type="bidirectional"/>
+        <pin num="16" name="P0.27" type="bidirectional"/>
+        <pin num="17" name="P0.00/XL1" type="bidirectional"/>
+        <pin num="18" name="P0.01/XL2" type="bidirectional"/>
+        <pin num="19" name="P0.26" type="bidirectional"/>
+        <pin num="20" name="P0.04/AIN2" type="bidirectional"/>
+        <pin num="21" name="P0.05/AIN3" type="bidirectional"/>
+        <pin num="22" name="P0.06" type="bidirectional"/>
+        <pin num="23" name="P0.07" type="bidirectional"/>
+        <pin num="24" name="P0.08" type="bidirectional"/>
+        <pin num="25" name="P1.08" type="bidirectional"/>
+        <pin num="26" name="P1.09" type="bidirectional"/>
+        <pin num="27" name="P0.11" type="bidirectional"/>
+        <pin num="28" name="VDD" type="bidirectional"/>
+        <pin num="29" name="P0.12" type="bidirectional"/>
+        <pin num="30" name="VDDH" type="bidirectional"/>
+        <pin num="31" name="DCCH" type="bidirectional"/>
+        <pin num="32" name="VBUS" type="bidirectional"/>
+        <pin num="33" name="GND@33" type="bidirectional"/>
+        <pin num="34" name="D-" type="bidirectional"/>
+        <pin num="35" name="D+" type="bidirectional"/>
+        <pin num="36" name="P0.14" type="bidirectional"/>
+        <pin num="37" name="P0.13" type="bidirectional"/>
+        <pin num="38" name="P0.16" type="bidirectional"/>
+        <pin num="39" name="P0.15" type="bidirectional"/>
+        <pin num="40" name="P0.18/RESET" type="bidirectional"/>
+        <pin num="41" name="P0.17" type="bidirectional"/>
+        <pin num="42" name="P0.19" type="bidirectional"/>
+        <pin num="43" name="P0.21" type="bidirectional"/>
+        <pin num="44" name="P0.20" type="bidirectional"/>
+        <pin num="45" name="P0.23" type="bidirectional"/>
+        <pin num="46" name="P0.22" type="bidirectional"/>
+        <pin num="47" name="P1.00" type="bidirectional"/>
+        <pin num="48" name="P0.24" type="bidirectional"/>
+        <pin num="49" name="P0.25" type="bidirectional"/>
+        <pin num="50" name="P1.02" type="bidirectional"/>
+        <pin num="51" name="SWDIO" type="bidirectional"/>
+        <pin num="52" name="P0.09/NFC1" type="bidirectional"/>
+        <pin num="53" name="SWDCLK" type="bidirectional"/>
+        <pin num="54" name="P0.10/NFC2" type="bidirectional"/>
+        <pin num="55" name="GND@55" type="bidirectional"/>
+        <pin num="56" name="P1.04" type="bidirectional"/>
+        <pin num="57" name="P1.06" type="bidirectional"/>
+        <pin num="58" name="P1.07" type="bidirectional"/>
+        <pin num="59" name="P1.05" type="bidirectional"/>
+        <pin num="60" name="P1.03" type="bidirectional"/>
+        <pin num="61" name="P1.01" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="MOSFET-P">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_0603_NOOUT">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:0603-NO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="RESISTOR_4PACK">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:RESPACK_4X0603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="1" type="passive"/>
+        <pin num="3" name="1" type="passive"/>
+        <pin num="4" name="1" type="passive"/>
+        <pin num="5" name="2" type="passive"/>
+        <pin num="6" name="2" type="passive"/>
+        <pin num="7" name="2" type="passive"/>
+        <pin num="8" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="SPIFLASH_8PINUX">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:USON8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SSEL" type="bidirectional"/>
+        <pin num="2" name="MISO" type="bidirectional"/>
+        <pin num="3" name="WP#/IO2" type="bidirectional"/>
+        <pin num="4" name="VSS" type="bidirectional"/>
+        <pin num="5" name="MOSI" type="bidirectional"/>
+        <pin num="6" name="SCK" type="bidirectional"/>
+        <pin num="7" name="HOLD#/IO3" type="bidirectional"/>
+        <pin num="8" name="VCC" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="SWITCH_TACT_SMT4.6X2.8">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:BTN_KMR2_4.6X2.8</field>
+      </fields>
+      <pins>
+        <pin num="A" name="P" type="passive"/>
+        <pin num="A'" name="P1" type="passive"/>
+        <pin num="B" name="S" type="passive"/>
+        <pin num="B'" name="S1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP10R">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:TP10R</field>
+      </fields>
+      <pins>
+        <pin num="TP" name="TP" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="TPTP12R">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:TP12R</field>
+      </fields>
+      <pins>
+        <pin num="TP" name="TP" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="USB_MICRO_20329_V2">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:4UCONN_20329_V2</field>
+      </fields>
+      <pins>
+        <pin num="BASE@1" name="GND" type="power_in"/>
+        <pin num="BASE@2" name="GND" type="power_in"/>
+        <pin num="D+" name="D+" type="bidirectional"/>
+        <pin num="D-" name="D-" type="bidirectional"/>
+        <pin num="GND" name="GND" type="power_in"/>
+        <pin num="ID" name="ID" type="bidirectional"/>
+        <pin num="SPRT@1" name="GND" type="power_in"/>
+        <pin num="SPRT@2" name="GND" type="power_in"/>
+        <pin num="SPRT@3" name="GND" type="power_in"/>
+        <pin num="SPRT@4" name="GND" type="power_in"/>
+        <pin num="VBUS" name="VBUS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="VREG_SOT23-5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:SOT23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="P4" type="bidirectional"/>
+        <pin num="5" name="OUT" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="WS2812B3535">
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:LED3535</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DI" type="input"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="DO" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Adafruit nRF52840 Bluefruit Feather Express Rev D-eagle-import" part="XTAL-3.2X1.5">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Footprint">Adafruit nRF52840 Bluefruit Feather Express Rev D:XTAL3215</field>
+      </fields>
+      <pins>
+        <pin num="P$1" name="P$1" type="bidirectional"/>
+        <pin num="P$2" name="P$2" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Instrumentation" part="INA333xxDGK">
+      <description>Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8</description>
+      <docs>https://www.ti.com/lit/ds/symlink/ina333.pdf</docs>
+      <footprints>
+        <fp>VSSOP*3.0x3.0mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA333xxDGK</field>
+        <field name="Footprint">Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina333.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Rg" type="passive"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="Ref" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="Rg" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="MCP6001-OT">
+      <description>1MHz, Low-Power Op Amp, SOT-23-5</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP6001-OT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="V-" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="CGA3E2X7R1H222K080AA" part="CGA3E2X7R1H222K080AA">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CGA3E2X7R1H222K080AA</field>
+        <field name="Footprint">CGA3E2X7R1H222K080AA:CAPC1608X90N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CL05B104KP5NNNC" part="CL05B104KP5NNNC">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CL05B104KP5NNNC</field>
+        <field name="Footprint">CL05B104KP5NNNC:CAPC1005X55N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CL21A106KOQNNNG" part="CL21A106KOQNNNG">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CL21A106KOQNNNG</field>
+        <field name="Footprint">CL21A106KOQNNNG:CAPC2012X140N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CRCW251220R0FKEG" part="CRCW251220R0FKEG">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">CRCW251220R0FKEG</field>
+        <field name="Footprint">CRCW251220R0FKEG:RESC6331X70N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ERA2AEB303X" part="ERA2AEB303X">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">ERA2AEB303X</field>
+        <field name="Footprint">ERA2AEB303X:RES_ERA2AEB303X</field>
+        <field name="PARTREV">3/1/2020</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">0.35 mm</field>
+        <field name="MANUFACTURER">Panasonic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GRM155R71C103KA01D" part="GRM155R71C103KA01D">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">GRM155R71C103KA01D</field>
+        <field name="Footprint">GRM155R71C103KA01D:CAPC1005X55N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Library" part="HW5P-1">
+      <fields>
+        <field name="Reference">Q</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vdd" type="power_in"/>
+        <pin num="2" name="Vout" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Library" part="SEN-11574">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="" name="OUT" type="output"/>
+        <pin num="1" name="+V" type="power_in"/>
+        <pin num="3" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="RC0402FR-07100KL" part="RC0402FR-07100KL">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RC0402FR-07100KL</field>
+        <field name="Footprint">RC0402FR-07100KL:RESC1005X40</field>
+        <field name="MANUFACTURER">YAGEO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RC0402FR-0739KL" part="RC0402FR-0739KL">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RC0402FR-0739KL</field>
+        <field name="Footprint">RC0402FR-0739KL:RESC1005X40N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RC0402FR-0745K3L" part="RC0402FR-0745K3L">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RC0402FR-0745K3L</field>
+        <field name="Footprint">RC0402FR-0745K3L:RESC1005X40N</field>
+        <field name="DigiKey_Part_Number">311-45.3KLRTR-ND</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=snap</field>
+        <field name="Description">
+                        
+                            45.3 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="MF">Yageo</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402FR-0745K3L/Yageo/view-part/?ref=eda</field>
+        <field name="MP">RC0402FR-0745K3L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RC0402JR-074K7L" part="RC0402JR-074K7L">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RC0402JR-074K7L</field>
+        <field name="Footprint">RC0402JR-074K7L:RESC1005X40N</field>
+        <field name="DigiKey_Part_Number">311-4.7KJRTR-ND</field>
+        <field name="MF">Yageo</field>
+        <field name="DESCRIPTION">4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film</field>
+        <field name="PACKAGE">1005 Panasonic Electronic Components</field>
+        <field name="PRICE">None</field>
+        <field name="Package">1005 Panasonic Electronic Components</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=eda</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/RC0402JR-074K7L/Yageo/view-part/?ref=snap</field>
+        <field name="MP">RC0402JR-074K7L</field>
+        <field name="Description">
+                        
+                            4.7 kOhms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film
+                        
+</field>
+        <field name="AVAILABILITY">In Stock</field>
+        <field name="PURCHASE-URL">https://pricing.snapeda.com/search/part/RC0402JR-074K7L/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Motion" part="MPU-6050">
+      <description>InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C</description>
+      <docs>https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</docs>
+      <footprints>
+        <fp>*QFN*4x4mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPU-6050</field>
+        <field name="Footprint">Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm</field>
+        <field name="Datasheet">https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CLKIN" type="input"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="AUX_DA" type="bidirectional"/>
+        <pin num="7" name="AUX_CL" type="output"/>
+        <pin num="8" name="VLOGIC" type="power_in"/>
+        <pin num="9" name="AD0" type="input"/>
+        <pin num="10" name="REGOUT" type="passive"/>
+        <pin num="11" name="FSYNC" type="input"/>
+        <pin num="12" name="INT" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="NC" type="no_connect"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="NC" type="no_connect"/>
+        <pin num="17" name="NC" type="no_connect"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="RESV" type="no_connect"/>
+        <pin num="20" name="CPOUT" type="passive"/>
+        <pin num="21" name="RESV" type="no_connect"/>
+        <pin num="22" name="RESV" type="no_connect"/>
+        <pin num="23" name="SCL" type="input"/>
+        <pin num="24" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Temperature" part="DS18B20">
+      <description>Programmable Resolution 1-Wire Digital Thermometer TO-92</description>
+      <docs>http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf</docs>
+      <footprints>
+        <fp>TO*92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS18B20</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="DQ" type="bidirectional"/>
+        <pin num="3" name="V_{DD}" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="2024-11-11_22-44-29">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/2024-11-11_22-44-29.kicad_sym</uri>
+    </library>
+    <library logical="2024-11-12_18-15-18">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/2024-11-12_18-15-18.kicad_sym</uri>
+    </library>
+    <library logical="Amplifier_Instrumentation">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Amplifier_Instrumentation.kicad_sym</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="CGA3E2X7R1H222K080AA">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/CGA3E2X7R1H222K080AA.kicad_sym</uri>
+    </library>
+    <library logical="CL05B104KP5NNNC">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/CL05B104KP5NNNC.kicad_sym</uri>
+    </library>
+    <library logical="CL21A106KOQNNNG">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/CL21A106KOQNNNG.kicad_sym</uri>
+    </library>
+    <library logical="CRCW251220R0FKEG">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/CRCW251220R0FKEG.kicad_sym</uri>
+    </library>
+    <library logical="ERA2AEB303X">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/ERA2AEB303X.kicad_sym</uri>
+    </library>
+    <library logical="GRM155R71C103KA01D">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/GRM155R71C103KA01D.kicad_sym</uri>
+    </library>
+    <library logical="Library">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/Library.kicad_sym</uri>
+    </library>
+    <library logical="RC0402FR-07100KL">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/RC0402FR-07100KL.kicad_sym</uri>
+    </library>
+    <library logical="RC0402FR-0739KL">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/RC0402FR-0739KL.kicad_sym</uri>
+    </library>
+    <library logical="RC0402FR-0745K3L">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/RC0402FR-0745K3L.kicad_sym</uri>
+    </library>
+    <library logical="RC0402JR-074K7L">
+      <uri>C:/Users/Eli/Documents/KiCad/7.0/symbols/RC0402JR-074K7L.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Motion">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Sensor_Motion.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Temperature">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Sensor_Temperature.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/A0">
+      <node ref="MDBT1" pin="20" pinfunction="P0.04/AIN2" pintype="bidirectional"/>
+      <node ref="Q4" pin="2" pinfunction="Vout" pintype="power_out"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/A1">
+      <node ref="MDBT1" pin="21" pinfunction="P0.05/AIN3" pintype="bidirectional"/>
+      <node ref="Q2" pin="2" pinfunction="Vout" pintype="power_out"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/A2">
+      <node ref="MDBT1" pin="14" pinfunction="P0.30/AIN6" pintype="bidirectional"/>
+      <node ref="U2" pin="2" pinfunction="DQ" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/A3">
+      <node ref="MDBT1" pin="13" pinfunction="P0.28/AIN4" pintype="bidirectional"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U3" pin="" pinfunction="OUT" pintype="output"/>
+    </net>
+    <net code="5" name="/A4">
+      <node ref="MDBT1" pin="11" pinfunction="P0.02/AIN0" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/A5">
+      <node ref="MDBT1" pin="9" pinfunction="P0.03/AIN1" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/ADC CS">
+      <node ref="MDBT1" pin="4" pinfunction="P1.11" pintype="bidirectional"/>
+      <node ref="U6" pin="11" pinfunction="*CS" pintype="unspecified"/>
+    </net>
+    <net code="8" name="/AREF">
+      <node ref="C11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="MDBT1" pin="12" pinfunction="P0.31/AIN7" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/D2">
+      <node ref="MDBT1" pin="54" pinfunction="P0.10/NFC2" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/D5">
+      <node ref="MDBT1" pin="25" pinfunction="P1.08" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/D6">
+      <node ref="MDBT1" pin="23" pinfunction="P0.07" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/D9">
+      <node ref="MDBT1" pin="19" pinfunction="P0.26" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/D10">
+      <node ref="MDBT1" pin="16" pinfunction="P0.27" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/D11">
+      <node ref="MDBT1" pin="22" pinfunction="P0.06" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/D12">
+      <node ref="MDBT1" pin="24" pinfunction="P0.08" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/D13">
+      <node ref="MDBT1" pin="26" pinfunction="P1.09" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/DCCH">
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="MDBT1" pin="31" pinfunction="DCCH" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/EEG1 OUT">
+      <node ref="U6" pin="3" pinfunction="AIN1+" pintype="input"/>
+      <node ref="U9" pin="7" pinfunction="VOUTB" pintype="output"/>
+    </net>
+    <net code="19" name="/EEG1+">
+      <node ref="U4" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="20" name="/EEG2 OUT">
+      <node ref="U5" pin="7" pinfunction="VOUTB" pintype="output"/>
+      <node ref="U6" pin="22" pinfunction="AIN2+" pintype="input"/>
+    </net>
+    <net code="21" name="/EEG2+">
+      <node ref="U10" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="22" name="/EEG3 OUT">
+      <node ref="U13" pin="7" pinfunction="VOUTB" pintype="output"/>
+      <node ref="U6" pin="5" pinfunction="AIN3+" pintype="input"/>
+    </net>
+    <net code="23" name="/EEG3+">
+      <node ref="U14" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="24" name="/EEG4 OUT">
+      <node ref="U11" pin="7" pinfunction="VOUTB" pintype="output"/>
+      <node ref="U6" pin="20" pinfunction="AIN4+" pintype="input"/>
+    </net>
+    <net code="25" name="/EEG4+">
+      <node ref="U12" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="26" name="/EN">
+      <node ref="R7" pin="2" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="27" name="/LED1">
+      <node ref="MDBT1" pin="8" pinfunction="P1.15" pintype="bidirectional"/>
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="28" name="/LED2">
+      <node ref="D4" pin="A" pinfunction="A" pintype="passive"/>
+      <node ref="MDBT1" pin="3" pinfunction="P1.10" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/MISO">
+      <node ref="MDBT1" pin="39" pinfunction="P0.15" pintype="bidirectional"/>
+      <node ref="U6" pin="14" pinfunction="SDO" pintype="output"/>
+    </net>
+    <net code="30" name="/MOSI">
+      <node ref="MDBT1" pin="37" pinfunction="P0.13" pintype="bidirectional"/>
+      <node ref="U6" pin="10" pinfunction="SDI" pintype="input"/>
+    </net>
+    <net code="31" name="/NEOPIX">
+      <node ref="LED1" pin="1" pinfunction="DI" pintype="input"/>
+      <node ref="MDBT1" pin="38" pinfunction="P0.16" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/QSPI_CS">
+      <node ref="IC1" pin="1" pinfunction="SSEL" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="44" pinfunction="P0.20" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/QSPI_DATA0">
+      <node ref="IC1" pin="5" pinfunction="MOSI" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="41" pinfunction="P0.17" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/QSPI_DATA1">
+      <node ref="IC1" pin="2" pinfunction="MISO" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="46" pinfunction="P0.22" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/QSPI_DATA2">
+      <node ref="IC1" pin="3" pinfunction="WP#/IO2" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="45" pinfunction="P0.23" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/QSPI_DATA3">
+      <node ref="IC1" pin="7" pinfunction="HOLD#/IO3" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="43" pinfunction="P0.21" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/QSPI_SCK">
+      <node ref="IC1" pin="6" pinfunction="SCK" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="42" pinfunction="P0.19" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/RESET">
+      <node ref="MDBT1" pin="40" pinfunction="P0.18/RESET" pintype="bidirectional"/>
+      <node ref="SW1" pin="B" pinfunction="S" pintype="passive"/>
+      <node ref="SW1" pin="B'" pinfunction="S1" pintype="passive"/>
+      <node ref="X1" pin="10" pinfunction="NRESET" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="/RXD">
+      <node ref="MDBT1" pin="48" pinfunction="P0.24" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="/SCK">
+      <node ref="MDBT1" pin="36" pinfunction="P0.14" pintype="bidirectional"/>
+      <node ref="U6" pin="17" pinfunction="SCLK" pintype="input"/>
+    </net>
+    <net code="41" name="/SCL">
+      <node ref="MDBT1" pin="27" pinfunction="P0.11" pintype="bidirectional"/>
+      <node ref="U1" pin="23" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="42" name="/SDA">
+      <node ref="MDBT1" pin="29" pinfunction="P0.12" pintype="bidirectional"/>
+      <node ref="U1" pin="24" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/SWCLK">
+      <node ref="MDBT1" pin="53" pinfunction="SWDCLK" pintype="bidirectional"/>
+      <node ref="SWC1" pin="TP" pinfunction="TP" pintype="input"/>
+      <node ref="X1" pin="4" pinfunction="SWDCLK" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="/SWDIO">
+      <node ref="MDBT1" pin="51" pinfunction="SWDIO" pintype="bidirectional"/>
+      <node ref="SWD1" pin="TP" pinfunction="TP" pintype="input"/>
+      <node ref="X1" pin="2" pinfunction="SWDIO" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="/SWITCH">
+      <node ref="MDBT1" pin="50" pinfunction="P1.02" pintype="bidirectional"/>
+      <node ref="SW2" pin="B" pinfunction="S" pintype="passive"/>
+      <node ref="SW2" pin="B'" pinfunction="S1" pintype="passive"/>
+    </net>
+    <net code="46" name="/SWO">
+      <node ref="MDBT1" pin="47" pinfunction="P1.00" pintype="bidirectional"/>
+      <node ref="X1" pin="6" pinfunction="SWO" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="/TXD">
+      <node ref="MDBT1" pin="49" pinfunction="P0.25" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="/USBD+">
+      <node ref="MDBT1" pin="35" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="49" name="/USBD-">
+      <node ref="MDBT1" pin="34" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="50" name="/VDIV">
+      <node ref="MDBT1" pin="10" pinfunction="P0.29/AIN5" pintype="bidirectional"/>
+      <node ref="R7" pin="5" pinfunction="2" pintype="passive"/>
+      <node ref="R7" pin="6" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="51" name="3.3V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="VCC" pintype="bidirectional"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="LED1" pin="2" pinfunction="VDD" pintype="power_in"/>
+      <node ref="MDBT1" pin="28" pinfunction="VDD" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="30" pinfunction="VDDH" pintype="bidirectional"/>
+      <node ref="Q2" pin="1" pinfunction="Vdd" pintype="power_in"/>
+      <node ref="Q4" pin="1" pinfunction="Vdd" pintype="power_in"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="VLOGIC" pintype="power_in"/>
+      <node ref="U10" pin="7" pinfunction="V+" pintype="power_in"/>
+      <node ref="U11" pin="8" pinfunction="VDD" pintype="unspecified"/>
+      <node ref="U12" pin="7" pinfunction="V+" pintype="power_in"/>
+      <node ref="U13" pin="8" pinfunction="VDD" pintype="unspecified"/>
+      <node ref="U14" pin="7" pinfunction="V+" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="V_{DD}" pintype="power_in"/>
+      <node ref="U20" pin="5" pinfunction="V+" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="+V" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="V+" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VDD" pintype="unspecified"/>
+      <node ref="U6" pin="16" pinfunction="VD+" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="VA+" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="OUT" pintype="power_in"/>
+      <node ref="U9" pin="8" pinfunction="VDD" pintype="unspecified"/>
+      <node ref="X1" pin="1" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="52" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="D1" pin="C" pinfunction="C" pintype="passive"/>
+      <node ref="IC1" pin="4" pinfunction="VSS" pintype="bidirectional"/>
+      <node ref="LED1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="MDBT1" pin="1" pinfunction="GND@1" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="15" pinfunction="GND@15" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="2" pinfunction="GND@2" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="33" pinfunction="GND@33" pintype="bidirectional"/>
+      <node ref="MDBT1" pin="55" pinfunction="GND@55" pintype="bidirectional"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R7" pin="3" pinfunction="1" pintype="passive"/>
+      <node ref="R7" pin="8" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW1" pin="A" pinfunction="P" pintype="passive"/>
+      <node ref="SW1" pin="A'" pinfunction="P1" pintype="passive"/>
+      <node ref="SW2" pin="A" pinfunction="P" pintype="passive"/>
+      <node ref="SW2" pin="A'" pinfunction="P1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="CLKIN" pintype="input"/>
+      <node ref="U1" pin="11" pinfunction="FSYNC" pintype="input"/>
+      <node ref="U1" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U10" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U10" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U11" pin="4" pinfunction="VSS" pintype="unspecified"/>
+      <node ref="U12" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U12" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U13" pin="4" pinfunction="VSS" pintype="unspecified"/>
+      <node ref="U14" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U14" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U20" pin="2" pinfunction="V-" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="GND" pintype="power_out"/>
+      <node ref="U4" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="VSS" pintype="unspecified"/>
+      <node ref="U6" pin="1" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U6" pin="15" pinfunction="DGND" pintype="power_in"/>
+      <node ref="U6" pin="19" pinfunction="AIN4-" pintype="input"/>
+      <node ref="U6" pin="21" pinfunction="AIN2-" pintype="input"/>
+      <node ref="U6" pin="23" pinfunction="VREF-" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="AIN1-" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="AIN3-" pintype="input"/>
+      <node ref="U7" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U9" pin="4" pinfunction="VSS" pintype="unspecified"/>
+      <node ref="X1" pin="3" pinfunction="GND@1" pintype="power_in"/>
+      <node ref="X1" pin="5" pinfunction="GND@2" pintype="power_in"/>
+      <node ref="X1" pin="7" pinfunction="KEY" pintype="bidirectional"/>
+      <node ref="X1" pin="9" pinfunction="GNDDETECT" pintype="bidirectional"/>
+      <node ref="X2" pin="BASE@1" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="BASE@2" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="GND" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="SPRT@1" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="SPRT@2" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="SPRT@3" pinfunction="GND" pintype="power_in"/>
+      <node ref="X2" pin="SPRT@4" pinfunction="GND" pintype="power_in"/>
+      <node ref="X3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(D+1-PadTP)">
+      <node ref="D+1" pin="TP" pinfunction="TP" pintype="input"/>
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="X2" pin="D+" pinfunction="D+" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="Net-(D-1-PadTP)">
+      <node ref="D-1" pin="TP" pinfunction="TP" pintype="input"/>
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="X2" pin="D-" pinfunction="D-" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="Net-(D1-PadA)">
+      <node ref="D1" pin="A" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(D3-PadC)">
+      <node ref="D3" pin="C" pinfunction="C" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(D4-PadC)">
+      <node ref="D4" pin="C" pinfunction="C" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(MDBT1-P0.00{slash}XL1)">
+      <node ref="C5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MDBT1" pin="17" pinfunction="P0.00/XL1" pintype="bidirectional"/>
+      <node ref="Y1" pin="P$1" pinfunction="P$1" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="Net-(MDBT1-P0.01{slash}XL2)">
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="MDBT1" pin="18" pinfunction="P0.01/XL2" pintype="bidirectional"/>
+      <node ref="Y1" pin="P$2" pinfunction="P$2" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="Net-(MDBT1-P0.09{slash}NFC1)">
+      <node ref="MDBT1" pin="52" pinfunction="P0.09/NFC1" pintype="bidirectional"/>
+      <node ref="TP1" pin="TP" pinfunction="TP" pintype="input"/>
+    </net>
+    <net code="61" name="Net-(Q3-S)">
+      <node ref="C12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="D2" pin="C" pinfunction="C" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R7" pin="7" pinfunction="2" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="62" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="64" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pintype="output"/>
+    </net>
+    <net code="65" name="Net-(R13-Pad1)">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U10" pin="8" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="67" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U10" pin="6" pintype="output"/>
+    </net>
+    <net code="68" name="Net-(R16-Pad1)">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U12" pin="1" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="69" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U12" pin="8" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="70" name="Net-(R17-Pad1)">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U12" pin="6" pintype="output"/>
+    </net>
+    <net code="71" name="Net-(R19-Pad1)">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U14" pin="1" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="72" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U14" pin="8" pinfunction="Rg" pintype="passive"/>
+    </net>
+    <net code="73" name="Net-(R20-Pad1)">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U14" pin="6" pintype="output"/>
+    </net>
+    <net code="74" name="Net-(U1-CPOUT)">
+      <node ref="C39" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="CPOUT" pintype="passive"/>
+    </net>
+    <net code="75" name="Net-(U1-REGOUT)">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="REGOUT" pintype="passive"/>
+    </net>
+    <net code="76" name="Net-(U5-VINA+)">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="VINA+" pintype="input"/>
+    </net>
+    <net code="77" name="Net-(U5-VINB-)">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="VINB-" pintype="input"/>
+    </net>
+    <net code="78" name="Net-(U5-VOUTA)">
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="VOUTA" pintype="output"/>
+    </net>
+    <net code="79" name="Net-(U8-PROG)">
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="80" name="Net-(U8-STAT)">
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="STAT" pintype="output"/>
+    </net>
+    <net code="81" name="Net-(U9-VINA+)">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="VINA+" pintype="input"/>
+    </net>
+    <net code="82" name="Net-(U9-VINB-)">
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U9" pin="6" pinfunction="VINB-" pintype="input"/>
+    </net>
+    <net code="83" name="Net-(U9-VOUTA)">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="VOUTA" pintype="output"/>
+    </net>
+    <net code="84" name="Net-(U11-VINA+)">
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="VINA+" pintype="input"/>
+    </net>
+    <net code="85" name="Net-(U11-VINB-)">
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U11" pin="6" pinfunction="VINB-" pintype="input"/>
+    </net>
+    <net code="86" name="Net-(U11-VOUTA)">
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="VOUTA" pintype="output"/>
+    </net>
+    <net code="87" name="Net-(U13-VINA+)">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U13" pin="3" pinfunction="VINA+" pintype="input"/>
+    </net>
+    <net code="88" name="Net-(U13-VINB-)">
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U13" pin="6" pinfunction="VINB-" pintype="input"/>
+    </net>
+    <net code="89" name="Net-(U13-VOUTA)">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U13" pin="1" pinfunction="VOUTA" pintype="output"/>
+    </net>
+    <net code="90" name="Net-(U20-+)">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="U20" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="91" name="Net-(U20--)">
+      <node ref="U20" pin="1" pintype="output"/>
+      <node ref="U20" pin="4" pinfunction="-" pintype="input"/>
+      <node ref="U6" pin="24" pinfunction="VREF+" pintype="input"/>
+    </net>
+    <net code="92" name="VBAT">
+      <node ref="C13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R7" pin="4" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="VBAT" pintype="power_in"/>
+      <node ref="X3" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="93" name="VBUS">
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="D2" pin="A" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="A" pinfunction="A" pintype="passive"/>
+      <node ref="MDBT1" pin="32" pinfunction="VBUS" pintype="bidirectional"/>
+      <node ref="Q3" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="VDD" pintype="power_in"/>
+      <node ref="X2" pin="VBUS" pinfunction="VBUS" pintype="power_in"/>
+    </net>
+    <net code="94" name="unconnected-(LED1-DO-Pad3)">
+      <node ref="LED1" pin="3" pinfunction="DO" pintype="output+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(MDBT1-P1.01-Pad61)">
+      <node ref="MDBT1" pin="61" pinfunction="P1.01" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(MDBT1-P1.03-Pad60)">
+      <node ref="MDBT1" pin="60" pinfunction="P1.03" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(MDBT1-P1.04-Pad56)">
+      <node ref="MDBT1" pin="56" pinfunction="P1.04" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(MDBT1-P1.05-Pad59)">
+      <node ref="MDBT1" pin="59" pinfunction="P1.05" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(MDBT1-P1.06-Pad57)">
+      <node ref="MDBT1" pin="57" pinfunction="P1.06" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(MDBT1-P1.07-Pad58)">
+      <node ref="MDBT1" pin="58" pinfunction="P1.07" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(MDBT1-P1.12-Pad5)">
+      <node ref="MDBT1" pin="5" pinfunction="P1.12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(MDBT1-P1.13-Pad6)">
+      <node ref="MDBT1" pin="6" pinfunction="P1.13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(MDBT1-P1.14-Pad7)">
+      <node ref="MDBT1" pin="7" pinfunction="P1.14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(U1-AD0-Pad9)">
+      <node ref="U1" pin="9" pinfunction="AD0" pintype="input+no_connect"/>
+    </net>
+    <net code="105" name="unconnected-(U1-AUX_CL-Pad7)">
+      <node ref="U1" pin="7" pinfunction="AUX_CL" pintype="output+no_connect"/>
+    </net>
+    <net code="106" name="unconnected-(U1-AUX_DA-Pad6)">
+      <node ref="U1" pin="6" pinfunction="AUX_DA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(U1-INT-Pad12)">
+      <node ref="U1" pin="12" pinfunction="INT" pintype="output+no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U1-NC-Pad2)">
+      <node ref="U1" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U1-NC-Pad3)">
+      <node ref="U1" pin="3" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U1-NC-Pad4)">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U1-NC-Pad5)">
+      <node ref="U1" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U1-NC-Pad14)">
+      <node ref="U1" pin="14" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U1-NC-Pad15)">
+      <node ref="U1" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U1-NC-Pad16)">
+      <node ref="U1" pin="16" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U1-NC-Pad17)">
+      <node ref="U1" pin="17" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U1-RESV-Pad19)">
+      <node ref="U1" pin="19" pinfunction="RESV" pintype="no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U1-RESV-Pad21)">
+      <node ref="U1" pin="21" pinfunction="RESV" pintype="no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U1-RESV-Pad22)">
+      <node ref="U1" pin="22" pinfunction="RESV" pintype="no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U4-Ref-Pad5)">
+      <node ref="U4" pin="5" pinfunction="Ref" pintype="input+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U5-VINA--Pad2)">
+      <node ref="U5" pin="2" pinfunction="VINA-" pintype="input+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U5-VINB+-Pad5)">
+      <node ref="U5" pin="5" pinfunction="VINB+" pintype="input+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U6-A0-Pad8)">
+      <node ref="U6" pin="8" pinfunction="A0" pintype="output+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U6-A1-Pad18)">
+      <node ref="U6" pin="18" pinfunction="A1" pintype="output+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U6-CPD-Pad9)">
+      <node ref="U6" pin="9" pinfunction="CPD" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U6-NBV-Pad7)">
+      <node ref="U6" pin="7" pinfunction="NBV" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U6-XIN-Pad12)">
+      <node ref="U6" pin="12" pinfunction="XIN" pintype="input+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U6-XOUT-Pad13)">
+      <node ref="U6" pin="13" pinfunction="XOUT" pintype="output+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U7-P4-Pad4)">
+      <node ref="U7" pin="4" pinfunction="P4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U9-VINA--Pad2)">
+      <node ref="U9" pin="2" pinfunction="VINA-" pintype="input+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(U9-VINB+-Pad5)">
+      <node ref="U9" pin="5" pinfunction="VINB+" pintype="input+no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(U10-Ref-Pad5)">
+      <node ref="U10" pin="5" pinfunction="Ref" pintype="input+no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(U11-VINA--Pad2)">
+      <node ref="U11" pin="2" pinfunction="VINA-" pintype="input+no_connect"/>
+    </net>
+    <net code="133" name="unconnected-(U11-VINB+-Pad5)">
+      <node ref="U11" pin="5" pinfunction="VINB+" pintype="input+no_connect"/>
+    </net>
+    <net code="134" name="unconnected-(U12-Ref-Pad5)">
+      <node ref="U12" pin="5" pinfunction="Ref" pintype="input+no_connect"/>
+    </net>
+    <net code="135" name="unconnected-(U13-VINA--Pad2)">
+      <node ref="U13" pin="2" pinfunction="VINA-" pintype="input+no_connect"/>
+    </net>
+    <net code="136" name="unconnected-(U13-VINB+-Pad5)">
+      <node ref="U13" pin="5" pinfunction="VINB+" pintype="input+no_connect"/>
+    </net>
+    <net code="137" name="unconnected-(U14-Ref-Pad5)">
+      <node ref="U14" pin="5" pinfunction="Ref" pintype="input+no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(X1-TDI-Pad8)">
+      <node ref="X1" pin="8" pinfunction="TDI" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="139" name="unconnected-(X2-PadID)">
+      <node ref="X2" pin="ID" pinfunction="ID" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>
