@@ -1,4 +1,4 @@
-22677943917698180
+22679675639398166
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62791,6 +62791,13 @@ AMPHENOL_10118194-0001LF
 11
 Library
 CAPC2012X88N
+
+
+0
+2
+2
+Library
+CAPC2012X95N
 
 
 0
