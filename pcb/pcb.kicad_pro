@@ -391,7 +391,9 @@
     "pinned_footprint_libs": [
       "Library"
     ],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Library"
+    ]
   },
   "meta": {
     "filename": "pcb.kicad_pro",

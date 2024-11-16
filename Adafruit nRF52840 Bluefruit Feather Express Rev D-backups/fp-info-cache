@@ -1,4 +1,4 @@
-22677934965195906
+22679666657388134
 Adafruit nRF52840 Bluefruit Feather Express Rev D
 2X05_1.27MM_BOX_POSTS
 <p>4UCon: 20317</p>
@@ -62929,6 +62929,13 @@ Yellow 5381 Series LED
 0
 2
 2
+Library
+2X05_1.27MM_BOX_POSTS
+<p>4UCon: 20317</p>
+
+0
+10
+10
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
