@@ -1,0 +1,7 @@
+(version 1)
+
+(rule "USB Differential Pair"
+    (condition "A.NetClass == 'USB_DP_DN'")
+    (constraint track_width (min 0.2mm) (max 0.2mm))
+    (constraint diff_pair_gap (min 0.317mm) (max 0.317mm))
+)
