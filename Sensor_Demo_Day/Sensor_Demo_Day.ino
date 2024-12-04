@@ -257,6 +257,7 @@ void readMPU6050() {
         sensorData[6] = gyroZ;
 
         // Debug output
+        /*
         Serial.print("AccelX: "); Serial.print(accelX);
         Serial.print(" AccelY: "); Serial.print(accelY);
         Serial.print(" AccelZ: "); Serial.print(accelZ);
@@ -264,20 +265,21 @@ void readMPU6050() {
         Serial.print(" GyroX: "); Serial.print(gyroX);
         Serial.print(" GyroY: "); Serial.print(gyroY);
         Serial.print(" GyroZ: "); Serial.println(gyroZ);
+        */
     }
 }
 
 float calculateBPM() {
     float bpm = (peakCount * 60.0) / (HEART_RATE_MEASUREMENT_TIME / 1000.0);
-    Serial.print("BPM: ");
-    Serial.println(bpm);
+    // Serial.print("BPM: ");
+    // Serial.println(bpm);
     return bpm;
 }
 
 void sendSensorData() {
     // Convert sensor data to a string and send over BLE UART
     char dataStr[256];
-    snprintf(dataStr, sizeof(dataStr), "Light1: %.2f, Light2: %.2f, Temp: %.2f, BPM: %.2f, GyroX: %.2f, GyroY: %.2f, GyroZ: %.2f", 
+    snprintf(dataStr, sizeof(dataStr), "%.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f", // The order of this is  "Light1, Light2, Temp, BPM, GyroX, GyroY, GyroZ"
         sensorData[0], sensorData[1], sensorData[2], sensorData[3], sensorData[4], sensorData[5], sensorData[6]);
     
     if (Bluefruit.connected()) {
