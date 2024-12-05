@@ -257,7 +257,7 @@ void readMPU6050() {
         sensorData[6] = gyroZ;
 
         // Debug output
-        /*
+        
         Serial.print("AccelX: "); Serial.print(accelX);
         Serial.print(" AccelY: "); Serial.print(accelY);
         Serial.print(" AccelZ: "); Serial.print(accelZ);
@@ -265,7 +265,7 @@ void readMPU6050() {
         Serial.print(" GyroX: "); Serial.print(gyroX);
         Serial.print(" GyroY: "); Serial.print(gyroY);
         Serial.print(" GyroZ: "); Serial.println(gyroZ);
-        */
+        
     }
 }
 
