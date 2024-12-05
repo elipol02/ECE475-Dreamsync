@@ -133,6 +133,14 @@ void setup() {
 
 // Most of the initializeMPU6050() is just pulled from tutorial and examples I saw online
 bool initializeMPU6050() {
+
+    // Reset MPU6050
+    Wire.beginTransmission(MPU6050_ADDR);
+    Wire.write(MPU6050_PWR_MGMT_1);
+    Wire.write(0x80);  // Reset device
+    Wire.endTransmission(true);
+    delay(100);  // Wait for reset to complete
+    
     // Check if MPU6050 is responding
     Wire.beginTransmission(MPU6050_ADDR);
     if (Wire.endTransmission() != 0) {
