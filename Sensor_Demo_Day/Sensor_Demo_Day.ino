@@ -12,7 +12,7 @@
 #define LED_PIN 3  // pin for LED
 
 // MPU6050 Constants
-#define MPU6050_ADDR         0x68   // default I2C address 
+#define MPU6050_ADDR         0x69   // default I2C address 
 #define MPU6050_PWR_MGMT_1   0x6B   // Power Management 1 register
 #define MPU6050_GYRO_CONFIG  0x1B   // Gyroscope Configuration register
 #define MPU6050_ACCEL_CONFIG 0x1C   // Accelerometer Configuration register
