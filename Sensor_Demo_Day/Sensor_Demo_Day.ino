@@ -4,6 +4,7 @@
 #include <bluefruit.h>
 #include <Adafruit_LittleFS.h>
 #include <InternalFileSystem.h>
+#include <ArduinoJson.h> // Include the ArduinoJson library
 
 #define LIGHT_SENSOR_1 A0
 #define LIGHT_SENSOR_2 A1
@@ -12,7 +13,7 @@
 #define LED_PIN 3  // pin for LED
 
 // MPU6050 Constants
-#define MPU6050_ADDR         0x68   // default I2C address 
+#define MPU6050_ADDR         0x69   // default I2C address 
 #define MPU6050_PWR_MGMT_1   0x6B   // Power Management 1 register
 #define MPU6050_GYRO_CONFIG  0x1B   // Gyroscope Configuration register
 #define MPU6050_ACCEL_CONFIG 0x1C   // Accelerometer Configuration register
@@ -278,15 +279,38 @@ float calculateBPM() {
 }
 
 void sendSensorData() {
-    // Convert sensor data to a string and send over BLE UART
-    char dataStr[256];
-    snprintf(dataStr, sizeof(dataStr), "%.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f", // The order of this is  "Light1, Light2, Temp, BPM, GyroX, GyroY, GyroZ"
-        sensorData[0], sensorData[1], sensorData[2], sensorData[3], sensorData[4], sensorData[5], sensorData[6]);
-    
-    if (Bluefruit.connected()) {
-        bleuart.print(dataStr);
-        bleuart.print("\r\n");
+    if (!Bluefruit.connected()) {
+        Serial.println("BLE UART not connected...");
+        return;
     }
 
-    Serial.println(dataStr);
-}
+    // Create JSON document for each sensor and send it individually
+    for (int i = 0; i < 7; i++) {
+        StaticJsonDocument<64> jsonDoc; // Small size since we're sending one sensor at a time
+        String key;
+
+        // Assign a key based on the sensor index
+        switch (i) {
+            case 0: key = "Light1"; break;
+            case 1: key = "Light2"; break;
+            case 2: key = "Temp"; break;
+            case 3: key = "BPM"; break;
+            case 4: key = "GyroX"; break;
+            case 5: key = "GyroY"; break;
+            case 6: key = "GyroZ"; break;
+            default: key = "Unknown"; break;
+        }
+
+        // Populate JSON document
+        jsonDoc[key] = sensorData[i];
+
+        // Serialize JSON
+        char jsonString[64]; // Buffer for a single sensor JSON
+        serializeJson(jsonDoc, jsonString, sizeof(jsonString));
+
+        // Send JSON string over BLE
+        bleuart.println(jsonString);
+        Serial.println(jsonString); // Debug output
+        delay(50); // Small delay to ensure data is transmitted properly
+    }
+}   
