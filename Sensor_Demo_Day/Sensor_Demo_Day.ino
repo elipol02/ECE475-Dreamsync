@@ -284,6 +284,7 @@ void sendSensorData() {
         return;
     }
 
+
     // Create JSON document for each sensor and send it individually
     for (int i = 0; i < 7; i++) {
         StaticJsonDocument<64> jsonDoc; // Small size since we're sending one sensor at a time
@@ -313,4 +314,4 @@ void sendSensorData() {
         Serial.println(jsonString); // Debug output
         delay(50); // Small delay to ensure data is transmitted properly
     }
-}   
+} 
