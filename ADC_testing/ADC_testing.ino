@@ -185,11 +185,19 @@ bool initializeCS5523() {
 
 void performSystemReset() {
     // Step 3a: Write RS=1 to reset
-    sendCommand(0x03, 0x00, 0x40, 0x00); // RS = 1
     Serial.println("System reset requested (RS=1).");
+    sendCommand(0x03, 0x00, 0x00, 0x80); // RS = 1
 
-    // Step 3b: Clear RS bit to exit reset mode
+    uint32_t config = 0;
+    while (config != 0x0000c0) {
+        Serial.print("config is: ");
+        Serial.println(config, HEX);
+        config = readRegister(0x0B);
+        delay(10);
+    }
+
     sendCommand(0x03, 0x00, 0x00, 0x00); // RS = 0
+
     Serial.println("Exited reset mode (RS=0).");
 }
 
@@ -255,12 +263,14 @@ void configureChannels() {
     // set depth pointer bits to 0100 (all four CSR channels)
     SPI.transfer(0x03); // write to config command
     SPI.transfer(0x00);
-    SPI.transfer(0x40);
+    SPI.transfer(0x70);
     SPI.transfer(0x00);
 
     uint32_t configValue = readRegister(0x0B);
-    Serial.print("config register: ")
+    Serial.print("config register: ");
     Serial.println(configValue, HEX);
+
+    readSetups();
 
     // send setup channel write command
     SPI.transfer(0x05);
@@ -282,14 +292,23 @@ void configureChannels() {
     SPI.transfer(0x70);
     SPI.transfer(0x00);
 
+    readSetups();
+
+    SPI.endTransaction();
+    digitalWrite(ADC_CS_PIN, HIGH); // Deselect ADC
+
+    Serial.println("Channels configured for Setups 1,3,5,7.");
+}
+
+void readSetups() {
+  // Begin SPI transfer
+    SPI.transfer(0x0D); // Send command to read the register
+
     // Variables to hold the 24-bit segments
     uint32_t segment1 = 0; // First 24 bits
     uint32_t segment2 = 0; // Second 24 bits
     uint32_t segment3 = 0; // Third 24 bits
     uint32_t segment4 = 0; // Fourth 24 bits
-
-    // Begin SPI transfer
-    SPI.transfer(0x0D); // Send command to read the register
 
     // Read and process each 24-bit segment
     segment1 = ((uint32_t)SPI.transfer(0x00) << 16) | 
@@ -320,11 +339,6 @@ void configureChannels() {
 
     Serial.print("Segment 4 (24-bit): 0x");
     Serial.println(segment4, HEX);
-
-    SPI.endTransaction();
-    digitalWrite(ADC_CS_PIN, HIGH); // Deselect ADC
-
-    Serial.println("Channels configured for Setups 1,3,5,7.");
 }
 
 // Most of the initializeMPU6050() is just pulled from tutorial and examples I saw online
@@ -527,10 +541,10 @@ uint16_t readData() {
 }
 
 void sendSensorData() {
-    if (!Bluefruit.connected()) {
-        Serial.println("BLE UART not connected...");
-        return;
-    }
+    //if (!Bluefruit.connected()) {
+    //    Serial.println("BLE UART not connected...");
+    //    return;
+    //}
 
 
     // Create JSON document for each sensor and send it individually
